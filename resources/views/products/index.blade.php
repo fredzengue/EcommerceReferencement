@@ -3870,7 +3870,7 @@
                                                                                                 <ul class="ct-menu-item ">
                                                                                                     @foreach ($country->categories as $category)
                                                                                                     <li> 
-                                                                                                        <a href="https://demo.casethemes.net/organio/product-grid-2-columns/">
+                                                                                                        <a href="">
                                                                                                             <span>{{$category->name}}</span>
                                                                                                         </a>
                                                                                                     </li>

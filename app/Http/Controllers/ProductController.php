@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Product;
+use App\Models\Subcategory;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -12,8 +14,9 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(){
-        return view('products.index');
+    public function index($id){
+        $products = Product::with('subcategories')->where(['subcategory_id',$id])->paginate(15);
+        return view('products.index')->with('products',$products);
     }
 
     /**
