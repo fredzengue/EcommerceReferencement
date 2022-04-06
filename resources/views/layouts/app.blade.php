@@ -3991,7 +3991,7 @@
         type='text/css' media='all' />
     <script type="text/template" id="tmpl-variation-template">
         <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability"> data.variation.availability_html</div> 
-        </script>
+                </script>
     <script type="text/template" id="tmpl-unavailable-variation-template">
         <p>Sorry, this product is unavailable. Please choose a different combination.</p> </script>
     <script type='text/javascript' src='https://demo.casethemes.net/organio/wp-includes/js/jquery/jquery.min.js?ver=3.6.0'
@@ -4321,9 +4321,19 @@
                 <div id="ct-header-top" class="ct-header-top1">
                     <div class="container">
                         <div class="row">
-                            <div class="ct-topbar-wellcome"> Welcome to our Organic store <span>Organico!</span></div>
+                            <div class="ct-topbar-wellcome"> Bienvenue sur votre marché de produits alimentaires
+                                africains <span>Organico!</span></div>
+                                @guest
+                                @if (Route::has('login'))
+                                    <a class="nav-link" style="color: #fff" href="{{ route('login') }}">{{ __('Connexion') }}</a>
+                                @endif
+                                @if (Route::has('register'))
+                                        <a class="nav-link" style="color: #fff" href="{{ route('register') }}">{{ __('Inscription') }}</a>
+                                @endif
+                                @endguest
                             <div class="ct-topbar-cart">
-                                <div class="header-right-item h-btn-cart"> <i class="caseicon-shopping-cart"></i> Cart:
+                                <div class="header-right-item h-btn-cart"> <i class="caseicon-shopping-cart"></i>
+                                    Panier:
                                     <span class="widget_cart_counter_header">0 - <span class="cart-total"><span
                                                 class="woocommerce-Price-amount amount"><bdi><span
                                                         class="woocommerce-Price-currencySymbol">&#36;</span>0.00</bdi></span></span></span>
@@ -4339,367 +4349,15 @@
                                 <nav class="ct-main-navigation">
                                     <div class="ct-main-navigation-inner">
                                         <ul id="ct-main-menu-left" class="ct-main-menu children-arrow clearfix">
-                                            <li id="menu-item-23"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14 current_page_item megamenu megamenu-style-alt menu-item-has-children menu-item-23">
-                                                <a href="https://demo.casethemes.net/organio/"
-                                                    aria-current="page"><span>Home</span></a>
-                                                <ul class="sub-menu">
-                                                    <li>
-                                                        <div class="container">
-                                                            <div data-elementor-type="wp-post" data-elementor-id="2655"
-                                                                class="elementor elementor-2655"
-                                                                data-elementor-settings="[]">
-                                                                <div class="elementor-section-wrap">
-                                                                    <section
-                                                                        class="elementor-section elementor-top-section elementor-element elementor-element-009f6f8 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                                        data-id="009f6f8" data-element_type="section">
-                                                                        <div
-                                                                            class="elementor-container elementor-column-gap-extended ">
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-cd2dfe6"
-                                                                                data-id="cd2dfe6"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-e1ebd66 elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="e1ebd66"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo1.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>01</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-f6a14cc elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="f6a14cc"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-6/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/07/demo6.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>06</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-89c2ad2"
-                                                                                data-id="89c2ad2"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-5d412ae elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="5d412ae"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-2/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo3.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>02</cite>
-                                                                                                    (Megashop)</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-2a840f7 elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="2a840f7"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-7/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo-07.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>07</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-70413e4"
-                                                                                data-id="70413e4"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-56f1876 elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="56f1876"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-3/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo2.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>03</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-b408244 elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="b408244"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-8/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo-08.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>08</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-8e89d35"
-                                                                                data-id="8e89d35"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-f1b8f52 elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="f1b8f52"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-4/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo4.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>04</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-cc4c41f elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="cc4c41f"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <label>NEW</label>
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-9/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/09/demo-09.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>09</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-b1769ad"
-                                                                                data-id="b1769ad"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-5dce68f elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="5dce68f"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-5/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo5.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>05</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </section>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
                                             <li id="menu-item-22"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+                                                class="menu-item current-menu-item current_page_item menu-item-type-post_type menu-item-object-page menu-item-22">
                                                 <a
-                                                    href="https://demo.casethemes.net/organio/about/"><span>About</span></a>
-                                            </li>
-                                            <li id="menu-item-24"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24">
-                                                <a href="#"><span>Pages</span></a>
-                                                <ul class="sub-menu">
-                                                    <li id="menu-item-181"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-181">
-                                                        <a
-                                                            href="https://demo.casethemes.net/organio/services/"><span>Services</span></a>
-                                                    </li>
-                                                    <li id="menu-item-1579"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1579">
-                                                        <a
-                                                            href="https://demo.casethemes.net/organio/service/organic-store-services/"><span>Single
-                                                                Service</span></a>
-                                                    </li>
-                                                    <li id="menu-item-182"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-182">
-                                                        <a href="https://demo.casethemes.net/organio/team/"><span>Our
-                                                                Team</span></a>
-                                                    </li>
-                                                    <li id="menu-item-4529"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4529">
-                                                        <a href="https://demo.casethemes.net/organio/contact-us/"><span>Contact
-                                                                Us</span></a>
-                                                    </li>
-                                                    <li id="menu-item-978"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-978">
-                                                        <a
-                                                            href="https://demo.casethemes.net/organio/testimonials/"><span>Testimonials</span></a>
-                                                    </li>
-                                                    <li id="menu-item-3718"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
-                                                        <a href="#"><span>User Pages</span></a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-3720"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
-                                                                <a href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
-                                                                        In</span></a>
-                                                            </li>
-                                                            <li id="menu-item-3719"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
-                                                                <a href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
-                                                                        Up</span></a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li id="menu-item-183"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-183">
-                                                        <a href="https://demo.casethemes.net/organio/404-page"><span>404
-                                                                Page</span></a>
-                                                    </li>
-                                                    <li id="menu-item-3717"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3717">
-                                                        <a
-                                                            href="https://demo.casethemes.net/organio/landing/"><span>Landing</span></a>
-                                                    </li>
-                                                </ul>
+                                                    href="https://demo.casethemes.net/organio/about/"><span>Accueil</span></a>
                                             </li>
                                             <li id="menu-item-25"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page megamenu megamenu-style-alt menu-item-has-children menu-item-25">
                                                 <a
-                                                    href="https://demo.casethemes.net/organio/shop/"><span>Shop</span></a>
+                                                    href="https://demo.casethemes.net/organio/shop/"><span>Produits</span></a>
                                                 <ul class="sub-menu">
                                                     <li>
                                                         <div class="container">
@@ -4728,8 +4386,7 @@
                                                                                                 class="ct-heading h-align- item-st-default">
                                                                                                 <h6 class="item--title case-animate-time st-default wow "
                                                                                                     data-wow-delay="ms">
-                                                                                                    <span>Product
-                                                                                                        Layout</span>
+                                                                                                    <span>Cameroun</span>
                                                                                                 </h6>
                                                                                             </div>
                                                                                         </div>
@@ -4786,8 +4443,8 @@
                                                                                                 class="ct-heading h-align- item-st-default">
                                                                                                 <h6 class="item--title case-animate-time st-default wow "
                                                                                                     data-wow-delay="ms">
-                                                                                                    <span>Product
-                                                                                                        Layout</span>
+                                                                                                    <span>Côte
+                                                                                                        d'ivoire</span>
                                                                                                 </h6>
                                                                                             </div>
                                                                                         </div>
@@ -4845,8 +4502,7 @@
                                                                                                 class="ct-heading h-align- item-st-default">
                                                                                                 <h6 class="item--title case-animate-time st-default wow "
                                                                                                     data-wow-delay="ms">
-                                                                                                    <span>Product
-                                                                                                        Types</span>
+                                                                                                    <span>Sénégal</span>
                                                                                                 </h6>
                                                                                             </div>
                                                                                         </div>
@@ -4898,8 +4554,113 @@
                                                                                                 class="ct-heading h-align- item-st-default">
                                                                                                 <h6 class="item--title case-animate-time st-default wow "
                                                                                                     data-wow-delay="ms">
-                                                                                                    <span>Shop
-                                                                                                        Pages</span>
+                                                                                                    <span>Maroc</span>
+                                                                                                </h6>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="elementor-element elementor-element-11cf14d elementor-widget elementor-widget-ct_menu_item"
+                                                                                        data-id="11cf14d"
+                                                                                        data-element_type="widget"
+                                                                                        data-widget_type="ct_menu_item.default">
+                                                                                        <div
+                                                                                            class="elementor-widget-container">
+                                                                                            <div
+                                                                                                class="ct-menu-item-wrap  style1">
+                                                                                                <ul
+                                                                                                    class="ct-menu-item ">
+                                                                                                    <li> <a
+                                                                                                            href="https://demo.casethemes.net/organio/sign-in/">
+                                                                                                            <span>My
+                                                                                                                Account</span>
+                                                                                                        </a></li>
+                                                                                                    <li> <a
+                                                                                                            href="https://demo.casethemes.net/organio/cart/">
+                                                                                                            <span>Cart</span>
+                                                                                                        </a></li>
+                                                                                                    <li> <a
+                                                                                                            href="https://demo.casethemes.net/organio/checkout/">
+                                                                                                            <span>Checkout</span>
+                                                                                                        </a></li>
+                                                                                                    <li> <a
+                                                                                                            href="https://demo.casethemes.net/organio/wishlist/">
+                                                                                                            <span>Wishlist</span>
+                                                                                                        </a></li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-1687b2d"
+                                                                                data-id="1687b2d"
+                                                                                data-element_type="column">
+                                                                                <div
+                                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                                    <div class="elementor-element elementor-element-584856a elementor-widget elementor-widget-ct_heading"
+                                                                                        data-id="584856a"
+                                                                                        data-element_type="widget"
+                                                                                        data-widget_type="ct_heading.default">
+                                                                                        <div
+                                                                                            class="elementor-widget-container">
+                                                                                            <div
+                                                                                                class="ct-heading h-align- item-st-default">
+                                                                                                <h6 class="item--title case-animate-time st-default wow "
+                                                                                                    data-wow-delay="ms">
+                                                                                                    <span>Nigéria</span>
+                                                                                                </h6>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="elementor-element elementor-element-11cf14d elementor-widget elementor-widget-ct_menu_item"
+                                                                                        data-id="11cf14d"
+                                                                                        data-element_type="widget"
+                                                                                        data-widget_type="ct_menu_item.default">
+                                                                                        <div
+                                                                                            class="elementor-widget-container">
+                                                                                            <div
+                                                                                                class="ct-menu-item-wrap  style1">
+                                                                                                <ul
+                                                                                                    class="ct-menu-item ">
+                                                                                                    <li> <a
+                                                                                                            href="https://demo.casethemes.net/organio/sign-in/">
+                                                                                                            <span>My
+                                                                                                                Account</span>
+                                                                                                        </a></li>
+                                                                                                    <li> <a
+                                                                                                            href="https://demo.casethemes.net/organio/cart/">
+                                                                                                            <span>Cart</span>
+                                                                                                        </a></li>
+                                                                                                    <li> <a
+                                                                                                            href="https://demo.casethemes.net/organio/checkout/">
+                                                                                                            <span>Checkout</span>
+                                                                                                        </a></li>
+                                                                                                    <li> <a
+                                                                                                            href="https://demo.casethemes.net/organio/wishlist/">
+                                                                                                            <span>Wishlist</span>
+                                                                                                        </a></li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-1687b2d"
+                                                                                data-id="1687b2d"
+                                                                                data-element_type="column">
+                                                                                <div
+                                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                                    <div class="elementor-element elementor-element-584856a elementor-widget elementor-widget-ct_heading"
+                                                                                        data-id="584856a"
+                                                                                        data-element_type="widget"
+                                                                                        data-widget_type="ct_heading.default">
+                                                                                        <div
+                                                                                            class="elementor-widget-container">
+                                                                                            <div
+                                                                                                class="ct-heading h-align- item-st-default">
+                                                                                                <h6 class="item--title case-animate-time st-default wow "
+                                                                                                    data-wow-delay="ms">
+                                                                                                    <span>Bénin</span>
                                                                                                 </h6>
                                                                                             </div>
                                                                                         </div>
@@ -4951,6 +4712,116 @@
                                                     </li>
                                                 </ul>
                                             </li>
+                                            <li id="menu-item-24"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24">
+                                                <a href="#"><span>Catégories</span></a>
+                                                <ul class="sub-menu">
+                                                    <li id="menu-item-3718"
+                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                        <a href="#"><span>Epices</span></a>
+                                                        <ul class="sub-menu">
+
+                                                            <li id="menu-item-3719"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
+                                                                <a href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
+                                                                        Up</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="menu-item-3718"
+                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                        <a href="#"><span>Fruits</span></a>
+                                                        <ul class="sub-menu">
+                                                            <li id="menu-item-3720"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
+                                                                <a href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
+                                                                        In</span></a>
+                                                            </li>
+                                                            <li id="menu-item-3719"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
+                                                                <a href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
+                                                                        Up</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="menu-item-3718"
+                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                        <a href="#"><span>Légumes</span></a>
+                                                        <ul class="sub-menu">
+                                                            <li id="menu-item-3720"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
+                                                                <a href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
+                                                                        In</span></a>
+                                                            </li>
+                                                            <li id="menu-item-3719"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
+                                                                <a href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
+                                                                        Up</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="menu-item-3718"
+                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                        <a href="#"><span>Surgelés</span></a>
+                                                        <ul class="sub-menu">
+                                                            <li id="menu-item-3718"
+                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                                <a href="#"><span>Poisson</span></a>
+                                                                <ul class="sub-menu">
+                                                                    <li id="menu-item-3720"
+                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
+                                                                        <a
+                                                                            href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
+                                                                                In</span></a>
+                                                                    </li>
+                                                                    <li id="menu-item-3719"
+                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
+                                                                        <a
+                                                                            href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
+                                                                                Up</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li id="menu-item-3718"
+                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                                <a href="#"><span>Viandes rouges</span></a>
+                                                                <ul class="sub-menu">
+                                                                    <li id="menu-item-3720"
+                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
+                                                                        <a
+                                                                            href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
+                                                                                In</span></a>
+                                                                    </li>
+                                                                    <li id="menu-item-3719"
+                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
+                                                                        <a
+                                                                            href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
+                                                                                Up</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li id="menu-item-3718"
+                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                                <a href="#"><span>Viandes blanches</span></a>
+                                                                <ul class="sub-menu">
+                                                                    <li id="menu-item-3720"
+                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
+                                                                        <a
+                                                                            href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
+                                                                                In</span></a>
+                                                                    </li>
+                                                                    <li id="menu-item-3719"
+                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
+                                                                        <a
+                                                                            href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
+                                                                                Up</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -4984,296 +4855,8 @@
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14 current_page_item megamenu megamenu-style-alt menu-item-has-children menu-item-23">
                                                 <a href="https://demo.casethemes.net/organio/"
-                                                    aria-current="page"><span>Home</span></a>
-                                                <ul class="sub-menu">
-                                                    <li>
-                                                        <div class="container">
-                                                            <div data-elementor-type="wp-post" data-elementor-id="2655"
-                                                                class="elementor elementor-2655"
-                                                                data-elementor-settings="[]">
-                                                                <div class="elementor-section-wrap">
-                                                                    <section
-                                                                        class="elementor-section elementor-top-section elementor-element elementor-element-009f6f8 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                                        data-id="009f6f8" data-element_type="section">
-                                                                        <div
-                                                                            class="elementor-container elementor-column-gap-extended ">
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-cd2dfe6"
-                                                                                data-id="cd2dfe6"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-e1ebd66 elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="e1ebd66"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo1.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>01</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-f6a14cc elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="f6a14cc"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-6/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/07/demo6.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>06</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-89c2ad2"
-                                                                                data-id="89c2ad2"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-5d412ae elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="5d412ae"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-2/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo3.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>02</cite>
-                                                                                                    (Megashop)</div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-2a840f7 elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="2a840f7"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-7/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo-07.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>07</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-70413e4"
-                                                                                data-id="70413e4"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-56f1876 elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="56f1876"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-3/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo2.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>03</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-b408244 elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="b408244"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-8/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo-08.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>08</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-8e89d35"
-                                                                                data-id="8e89d35"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-f1b8f52 elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="f1b8f52"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-4/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo4.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>04</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-cc4c41f elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="cc4c41f"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <label>NEW</label>
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-9/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/09/demo-09.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>09</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-b1769ad"
-                                                                                data-id="b1769ad"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-5dce68f elementor-widget elementor-widget-ct_showcase"
-                                                                                        data-id="5dce68f"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_showcase.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div class="ct-showcase "
-                                                                                                data-wow-delay="ms">
-                                                                                                <div
-                                                                                                    class="ct-showcase-image">
-                                                                                                    <a
-                                                                                                        href="https://demo.casethemes.net/organio/home-5/">
-                                                                                                        <img width="400"
-                                                                                                            height="500"
-                                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/demo5.jpg"
-                                                                                                            class="attachment-full"
-                                                                                                            alt="" />
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="ct-showcase-title">
-                                                                                                    Home <cite>05</cite>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </section>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
+                                                    aria-current="page"><span>Accueil</span></a>
+                                                
                                             </li>
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
@@ -5595,467 +5178,61 @@
                                             </li>
                                         </ul>
                                         <ul id="ct-main-menu-right" class="ct-main-menu children-arrow clearfix">
+                                            <li id="menu-item-22"
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+                                                <a
+                                                    href="https://demo.casethemes.net/organio/about/"><span>A propos</span></a>
+                                            </li>
+                                            <li id="menu-item-22"
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+                                                <a
+                                                    href="https://demo.casethemes.net/organio/about/"><span>Contact</span></a>
+                                            </li>
+                                            <li id="menu-item-22"
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+                                                <a
+                                                    href="https://demo.casethemes.net/organio/about/"><span>Blog</span></a>
+                                            </li>
+                                            @guest
+                                            
+                                            @else
                                             <li id="menu-item-372"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-372">
                                                 <a
-                                                    href="https://demo.casethemes.net/organio/portfolio-grid/"><span>Portfolio</span></a>
+                                                    href="https://demo.casethemes.net/organio/portfolio-grid/"><span>Compte</span></a>
                                                 <ul class="sub-menu">
+                                                    <li id="menu-item-3723"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3723">
+                                                        <a
+                                                            href="https://demo.casethemes.net/organio/portfolio-gallery/"><span>Profile</span></a>
+                                                    </li>
                                                     <li id="menu-item-373"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-373">
-                                                        <a href="https://demo.casethemes.net/organio/portfolio-grid/"><span>Portfolio
-                                                                Grid</span></a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-433"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-433">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/portfolio-grid-2-columns/"><span>2
-                                                                        Columns</span></a>
-                                                            </li>
-                                                            <li id="menu-item-432"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-432">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/portfolio-grid-3-columns/"><span>3
-                                                                        Columns</span></a>
-                                                            </li>
-                                                            <li id="menu-item-434"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-434">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/portfolio-grid/"><span>4
-                                                                        Columns</span></a>
-                                                            </li>
-                                                            <li id="menu-item-431"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-431">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/portfolio-grid-4-columns-wide/"><span>4
-                                                                        Columns Wide</span></a>
-                                                            </li>
-                                                            <li id="menu-item-630"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-630">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/portfolio-grid-3-columns-full-width-no-space/"><span>Full
-                                                                        Width No Space</span></a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li id="menu-item-387"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-387">
+                                                        <li id="menu-item-3723"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3723">
                                                         <a
-                                                            href="https://demo.casethemes.net/organio/portfolio-masonry/"><span>Portfolio
-                                                                Masonry</span></a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-506"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-506">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/portfolio-masonry/"><span>Portfolio
-                                                                        Masonry 1</span></a>
-                                                            </li>
-                                                            <li id="menu-item-505"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/portfolio-masonry-2/"><span>Portfolio
-                                                                        Masonry 2</span></a>
-                                                            </li>
-                                                            <li id="menu-item-504"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-504">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/portfolio-masonry-3/"><span>Portfolio
-                                                                        Masonry 3</span></a>
-                                                            </li>
-                                                        </ul>
+                                                            href="https://demo.casethemes.net/organio/portfolio-gallery/"><span>
+                                                                Commandes</span></a>
                                                     </li>
                                                     <li id="menu-item-3723"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3723">
                                                         <a
-                                                            href="https://demo.casethemes.net/organio/portfolio-gallery/"><span>Portfolio
-                                                                Gallery</span></a>
+                                                            href="https://demo.casethemes.net/organio/portfolio-gallery/"><span>Paiements</span></a>
                                                     </li>
-                                                    <li id="menu-item-1580"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-1580">
+                                                    <li id="menu-item-3723"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3723">
                                                         <a
-                                                            href="https://demo.casethemes.net/organio/portfolio/holding-fresh-radishes/"><span>Single
-                                                                Portfolio</span></a>
+                                                            href="https://demo.casethemes.net/organio/portfolio-gallery/"><span>liste de souhaits</span></a>
+                                                    </li>
+                                                    <li id="menu-item-3723"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3723">
+                                                        <a
+                                                            href="https://demo.casethemes.net/organio/portfolio-gallery/"><span>Livraison</span></a>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li id="menu-item-27"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-27">
-                                                <a
-                                                    href="https://demo.casethemes.net/organio/blog/"><span>Blog</span></a>
-                                                <ul class="sub-menu">
-                                                    <li id="menu-item-332"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332">
-                                                        <a href="https://demo.casethemes.net/organio/blog-carousel/"><span>Blog
-                                                                Carousel</span></a>
-                                                    </li>
-                                                    <li id="menu-item-135"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-135">
-                                                        <a href="https://demo.casethemes.net/organio/blog/"><span>Blog
-                                                                List</span></a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-324"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-324">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/blog-list-left-sidebar/"><span>Left
-                                                                        Sidebar</span></a>
-                                                            </li>
-                                                            <li id="menu-item-323"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/blog-list-full-width/"><span>Full
-                                                                        Width</span></a>
-                                                            </li>
-                                                            <li id="menu-item-325"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-325">
-                                                                <a href="https://demo.casethemes.net/organio/blog/"><span>Right
-                                                                        Sidebar</span></a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li id="menu-item-5114"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5114">
-                                                        <a
-                                                            href="https://demo.casethemes.net/organio/blog-grid-3-columns/"><span>Blog
-                                                                Grid</span></a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-242"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-242">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/blog-grid-2-columns/"><span>2
-                                                                        Columns</span></a>
-                                                            </li>
-                                                            <li id="menu-item-244"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-244">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/blog-grid-2-columns-left-sidebar/"><span>2
-                                                                        Columns : Left Sidebar</span></a>
-                                                            </li>
-                                                            <li id="menu-item-243"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-243">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/blog-grid-2-columns-right-sidebar/"><span>2
-                                                                        Columns : Right Sidebar</span></a>
-                                                            </li>
-                                                            <li id="menu-item-5116"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5116">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/blog-grid-3-columns/"><span>3
-                                                                        Columns</span></a>
-                                                            </li>
-                                                            <li id="menu-item-241"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-241">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/blog-grid-4-columns-full-width/"><span>4
-                                                                        Columns : Full Width</span></a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li id="menu-item-629"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-629">
-                                                        <a href="https://demo.casethemes.net/organio/blog-masonry/"><span>Blog
-                                                                Masonry</span></a>
-                                                    </li>
-                                                    <li id="menu-item-137"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-137">
-                                                        <a
-                                                            href="https://demo.casethemes.net/organio/we-advocate-swapping-screen-time-for-crafting/"><span>Blog
-                                                                Details</span></a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-327"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-327">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/zechsal-magnesium-flakes-especially-made/"><span>Left
-                                                                        Sidebar</span></a>
-                                                            </li>
-                                                            <li id="menu-item-326"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-326">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/best-guide-to-shopping-for-organic-ingredients/"><span>Full
-                                                                        Width</span></a>
-                                                            </li>
-                                                            <li id="menu-item-328"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-328">
-                                                                <a
-                                                                    href="https://demo.casethemes.net/organio/we-advocate-swapping-screen-time-for-crafting/"><span>Right
-                                                                        Sidebar</span></a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li id="menu-item-4530"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom megamenu megamenu-style-alt menu-item-has-children menu-item-4530">
-                                                <a href="#"><span>Elements</span></a>
-                                                <ul class="sub-menu">
-                                                    <li>
-                                                        <div class="container">
-                                                            <div data-elementor-type="wp-post" data-elementor-id="4527"
-                                                                class="elementor elementor-4527"
-                                                                data-elementor-settings="[]">
-                                                                <div class="elementor-section-wrap">
-                                                                    <section
-                                                                        class="elementor-section elementor-top-section elementor-element elementor-element-751b8a0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                                        data-id="751b8a0" data-element_type="section">
-                                                                        <div
-                                                                            class="elementor-container elementor-column-gap-extended ">
-                                                                            <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-716a780"
-                                                                                data-id="716a780"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-5667426 elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="5667426"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/accordions-toggles/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-bars"></i>
-                                                                                                            <span>Accordions
-                                                                                                                &
-                                                                                                                Toggles</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/blog-carousel/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-newspaper"></i>
-                                                                                                            <span>Blog
-                                                                                                                Carousel</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/blog-grid/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="far fa-newspaper"></i>
-                                                                                                            <span>Blog
-                                                                                                                Grid</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/buttons/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-cube"></i>
-                                                                                                            <span>Buttons</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/clients/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-user-astronaut"></i>
-                                                                                                            <span>Clients
-                                                                                                                Carousel</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/contact-form-7/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fab fa-wpforms"></i>
-                                                                                                            <span>Contact
-                                                                                                                Form
-                                                                                                                7</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-0d136be"
-                                                                                data-id="0d136be"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-38d728a elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="38d728a"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/countdown/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-sort-numeric-down-alt"></i>
-                                                                                                            <span>Countdown</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/google-maps/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-map-marked-alt"></i>
-                                                                                                            <span>Google
-                                                                                                                Maps</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/icon-with-text/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-layer-group"></i>
-                                                                                                            <span>Icon
-                                                                                                                With
-                                                                                                                Text</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/info-box/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-toolbox"></i>
-                                                                                                            <span>Info
-                                                                                                                Box</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/lists/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-list"></i>
-                                                                                                            <span>Lists</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/message-box/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-info-circle"></i>
-                                                                                                            <span>Message
-                                                                                                                Box</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-b641b3f"
-                                                                                data-id="b641b3f"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-538f40a elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="538f40a"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/portfolio-carousel/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-band-aid"></i>
-                                                                                                            <span>Portfolio
-                                                                                                                Carousel</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/portfolio-grid/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-wallet"></i>
-                                                                                                            <span>Portfolio
-                                                                                                                Grid</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/product-carousel/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="flaticon flaticon-dairy-products"></i>
-                                                                                                            <span>Product
-                                                                                                                Carousel</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/product-grid/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-shopping-bag"></i>
-                                                                                                            <span>Product
-                                                                                                                Grid</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/services-carousel/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-cog"></i>
-                                                                                                            <span>Services
-                                                                                                                Carousel</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/services-grid/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-cogs"></i>
-                                                                                                            <span>Services
-                                                                                                                Grid</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-a1a1b8b"
-                                                                                data-id="a1a1b8b"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-6a1344b elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="6a1344b"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/team-carousel/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-user-circle"></i>
-                                                                                                            <span>Team
-                                                                                                                Carousel</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/team-grid/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-users"></i>
-                                                                                                            <span>Team
-                                                                                                                Grid</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/testimonial-carousel/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-quote-left"></i>
-                                                                                                            <span>Testimonial
-                                                                                                                Carousel</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/testimonial-grid/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-quote-right"></i>
-                                                                                                            <span>Testimonial
-                                                                                                                Grid</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/video-buttons/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="far fa-play-circle"></i>
-                                                                                                            <span>Video
-                                                                                                                Buttons</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/elements/counters/">
-                                                                                                            <i aria-hidden="true"
-                                                                                                                class="fas fa-sort-numeric-up"></i>
-                                                                                                            <span>Counters</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </section>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
+                                            @endguest
+                                            
                                         </ul>
                                     </div>
                                 </nav>
@@ -6121,7 +5298,7 @@
                                                                                     </div>
                                                                                     <div class="ct-mailchimp-meta">
                                                                                         <h4 class="wg-title">
-                                                                                            Subscribe to our Newsletter:
+                                                                                            S'inscrire à notre Newsletter:
                                                                                         </h4>
                                                                                     </div>
                                                                                     <script>
@@ -6151,13 +5328,13 @@
                                                                                                     class="field-input">
                                                                                                     <input type="email"
                                                                                                         name="EMAIL"
-                                                                                                        placeholder="Type your mail address..."
+                                                                                                        placeholder="Votre adresse email..."
                                                                                                         required />
                                                                                                 </div>
                                                                                                 <div
                                                                                                     class="field-input">
                                                                                                     <input type="submit"
-                                                                                                        value="Subscribe" />
+                                                                                                        value="s'enregistrer" />
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div><label
@@ -6221,9 +5398,7 @@
                                                                                     data-css=" "></div>
                                                                                 <div
                                                                                     class="ct-text-editor elementor-clearfix">
-                                                                                    We work with a passion of taking
-                                                                                    challenges and creating new ones in
-                                                                                    advertising sector.</div>
+                                                                                    Des produits frais et bio venus d'Afrique pour vous.</div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -6262,7 +5437,7 @@
                                                                                 class="ct-heading h-align- item-st-default">
                                                                                 <h3 class="item--title case-animate-time st-default wow "
                                                                                     data-wow-delay="ms">
-                                                                                    <span>Links</span>
+                                                                                    <span>Besoin d'aide?</span>
                                                                                 </h3>
                                                                             </div>
                                                                         </div>
@@ -6289,28 +5464,22 @@
                                                                                         <li id="menu-item-60"
                                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14 current_page_item menu-item-60">
                                                                                             <a href="https://demo.casethemes.net/organio/"
-                                                                                                aria-current="page"><span>Home</span></a>
+                                                                                                aria-current="page"><span>Modifier une commande</span></a>
                                                                                         </li>
                                                                                         <li id="menu-item-980"
                                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-980">
                                                                                             <a
-                                                                                                href="https://demo.casethemes.net/organio/services/"><span>Services</span></a>
+                                                                                                href="https://demo.casethemes.net/organio/services/"><span>Annuler une commande</span></a>
                                                                                         </li>
                                                                                         <li id="menu-item-62"
                                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62">
                                                                                             <a
-                                                                                                href="https://demo.casethemes.net/organio/about/"><span>About
-                                                                                                    us</span></a>
+                                                                                                href="https://demo.casethemes.net/organio/about/"><span>Suivre sa commande</span></a>
                                                                                         </li>
                                                                                         <li id="menu-item-979"
                                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-979">
                                                                                             <a
-                                                                                                href="https://demo.casethemes.net/organio/testimonials/"><span>Testimonials</span></a>
-                                                                                        </li>
-                                                                                        <li id="menu-item-64"
-                                                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64">
-                                                                                            <a
-                                                                                                href="https://demo.casethemes.net/organio/blog/"><span>News</span></a>
+                                                                                                href="https://demo.casethemes.net/organio/testimonials/"><span>apropos de nous</span></a>
                                                                                         </li>
                                                                                     </ul>
                                                                                 </div>
@@ -6330,8 +5499,7 @@
                                                                             <div
                                                                                 class="ct-heading h-align- item-st-default">
                                                                                 <h3 class="item--title case-animate-time st-default wow "
-                                                                                    data-wow-delay="ms"> <span>Official
-                                                                                        info:</span></h3>
+                                                                                    data-wow-delay="ms"> <span>Contact:</span></h3>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -6357,15 +5525,20 @@
                                                                                             aria-hidden="true"
                                                                                             class="fas fa-map-marker-alt"></i>
                                                                                     </span> <span
-                                                                                        class="ct-contact-content"> 30
-                                                                                        Commercial Road<br /> Fratton,
-                                                                                        Australia </span></li>
+                                                                                        class="ct-contact-content"> 4
+                                                                                        rue de la justice pourpre, 95000</span></li>
                                                                                 <li> <span class="ct-contact-icon"> <i
                                                                                             aria-hidden="true"
                                                                                             class="fas fa-phone-alt"></i>
                                                                                     </span> <span
                                                                                         class="ct-contact-content">
                                                                                         1-888-452-1505 </span></li>
+                                                                                        <li> <span class="ct-contact-icon"> <i
+                                                                                            aria-hidden="true"
+                                                                                            class="fas fa-phone-alt"></i>
+                                                                                    </span> <span
+                                                                                        class="ct-contact-content">
+                                                                                        Nous contacter </span></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
@@ -6376,208 +5549,7 @@
                                                                             <div
                                                                                 class="ct-heading h-align- item-st-default">
                                                                                 <h6 class="item--title case-animate-time st-default wow "
-                                                                                    data-wow-delay="ms"> <span>Open
-                                                                                        Hours: </span></h6>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-element elementor-element-f4c33bb elementor-widget elementor-widget-ct_text_editor"
-                                                                        data-id="f4c33bb" data-element_type="widget"
-                                                                        data-widget_type="ct_text_editor.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <div id="ct_text_editor-f4c33bb"
-                                                                                class="ct-text-editor "
-                                                                                data-wow-delay="ms">
-                                                                                <div class="ct-inline-css"
-                                                                                    data-css=" "></div>
-                                                                                <div
-                                                                                    class="ct-text-editor elementor-clearfix">
-                                                                                    Mon &#8211; Sat: 8 am &#8211; 5
-                                                                                    pm,<br />Sunday: CLOSED</div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b0653ed"
-                                                                data-id="b0653ed" data-element_type="column">
-                                                                <div
-                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                    <div class="elementor-element elementor-element-2ebeb56 elementor-widget elementor-widget-ct_heading"
-                                                                        data-id="2ebeb56" data-element_type="widget"
-                                                                        data-widget_type="ct_heading.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <div
-                                                                                class="ct-heading h-align- item-st-default">
-                                                                                <h3 class="item--title case-animate-time st-default wow "
-                                                                                    data-wow-delay="ms">
-                                                                                    <span>Instagram</span>
-                                                                                </h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-element elementor-element-f23c909 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-                                                                        data-id="f23c909" data-element_type="widget"
-                                                                        data-widget_type="divider.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <div class="elementor-divider"> <span
-                                                                                    class="elementor-divider-separator">
-                                                                                </span></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-element elementor-element-2dba2eb elementor-widget elementor-widget-ct_text_editor"
-                                                                        data-id="2dba2eb" data-element_type="widget"
-                                                                        data-widget_type="ct_text_editor.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <div id="ct_text_editor-2dba2eb"
-                                                                                class="ct-text-editor "
-                                                                                data-wow-delay="ms">
-                                                                                <div class="ct-inline-css"
-                                                                                    data-css=" "></div>
-                                                                                <div
-                                                                                    class="ct-text-editor elementor-clearfix">
-                                                                                    <div id="sb_instagram"
-                                                                                        class="sbi sbi_mob_col_1 sbi_tab_col_2 sbi_col_3 sbi_width_resp"
-                                                                                        style="padding-bottom: 8px;width: 100%"
-                                                                                        data-feedid="*1" data-res="auto"
-                                                                                        data-cols="3"
-                                                                                        data-colsmobile="1"
-                                                                                        data-colstablet="2" data-num="6"
-                                                                                        data-nummobile=""
-                                                                                        data-shortcode-atts="{}"
-                                                                                        data-postid="30"
-                                                                                        data-locatornonce="71ebf6e381"
-                                                                                        data-sbi-flags="favorLocal">
-                                                                                        <div id="sbi_images"
-                                                                                            style="padding: 4px">
-                                                                                            <div class="sbi_item sbi_type_image sbi_new sbi_transition"
-                                                                                                id="sbi_17959653754394103"
-                                                                                                data-date="1615867629">
-                                                                                                <div
-                                                                                                    class="sbi_photo_wrap">
-                                                                                                    <a class="sbi_photo"
-                                                                                                        href="https://www.instagram.com/p/CMdzJsnJJDx/"
-                                                                                                        target="_blank"
-                                                                                                        rel="noopener nofollow"
-                                                                                                        data-full-res="https://scontent-ort2-1.cdninstagram.com/v/t51.29350-15/160592051_437679624012421_2157246266541466556_n.jpg?_nc_cat=102&#038;ccb=1-5&#038;_nc_sid=8ae9d6&#038;_nc_ohc=vwgydfnIStcAX-cKTg2&#038;_nc_ht=scontent-ort2-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT9iaF4PNTO_YpVnGCL8ngFBQxJnPR9FOdwTntiDo5p-dA&#038;oe=6224C195"
-                                                                                                        data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160592051_437679624012421_2157246266541466556_n.jpg?_nc_cat=102&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=vwgydfnIStcAX-cKTg2&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9iaF4PNTO_YpVnGCL8ngFBQxJnPR9FOdwTntiDo5p-dA&amp;oe=6224C195&quot;,&quot;150&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160592051_437679624012421_2157246266541466556_n.jpg?_nc_cat=102&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=vwgydfnIStcAX-cKTg2&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9iaF4PNTO_YpVnGCL8ngFBQxJnPR9FOdwTntiDo5p-dA&amp;oe=6224C195&quot;,&quot;320&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160592051_437679624012421_2157246266541466556_n.jpg?_nc_cat=102&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=vwgydfnIStcAX-cKTg2&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9iaF4PNTO_YpVnGCL8ngFBQxJnPR9FOdwTntiDo5p-dA&amp;oe=6224C195&quot;,&quot;640&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160592051_437679624012421_2157246266541466556_n.jpg?_nc_cat=102&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=vwgydfnIStcAX-cKTg2&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9iaF4PNTO_YpVnGCL8ngFBQxJnPR9FOdwTntiDo5p-dA&amp;oe=6224C195&quot;}">
-                                                                                                        <span
-                                                                                                            class="sbi-screenreader">Instagram
-                                                                                                            post
-                                                                                                            17959653754394103</span>
-                                                                                                        <img src="https://demo.casethemes.net/organio/wp-content/plugins/instagram-feed/img/placeholder.png"
-                                                                                                            alt="Instagram post 17959653754394103">
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="sbi_item sbi_type_image sbi_new sbi_transition"
-                                                                                                id="sbi_17914510495620947"
-                                                                                                data-date="1615867624">
-                                                                                                <div
-                                                                                                    class="sbi_photo_wrap">
-                                                                                                    <a class="sbi_photo"
-                                                                                                        href="https://www.instagram.com/p/CMdzJMkJS6K/"
-                                                                                                        target="_blank"
-                                                                                                        rel="noopener nofollow"
-                                                                                                        data-full-res="https://scontent-ort2-1.cdninstagram.com/v/t51.29350-15/160790142_520098882312680_7190864355709334403_n.jpg?_nc_cat=108&#038;ccb=1-5&#038;_nc_sid=8ae9d6&#038;_nc_ohc=UWrsTj1eOWAAX-pr8fv&#038;_nc_oc=AQnjlzqXgM3hrZcKqcrTBUUt8qUJlicWuvca__c51Pb0VhiaVBBUtPJCu9_gDmpEnn0&#038;_nc_ht=scontent-ort2-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT-cFOEPsf2CVPWWjiNjPXxX7cFGvBXE5k7C5qqoxsyq9g&#038;oe=62244FA8"
-                                                                                                        data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160790142_520098882312680_7190864355709334403_n.jpg?_nc_cat=108&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=UWrsTj1eOWAAX-pr8fv&amp;_nc_oc=AQnjlzqXgM3hrZcKqcrTBUUt8qUJlicWuvca__c51Pb0VhiaVBBUtPJCu9_gDmpEnn0&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-cFOEPsf2CVPWWjiNjPXxX7cFGvBXE5k7C5qqoxsyq9g&amp;oe=62244FA8&quot;,&quot;150&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160790142_520098882312680_7190864355709334403_n.jpg?_nc_cat=108&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=UWrsTj1eOWAAX-pr8fv&amp;_nc_oc=AQnjlzqXgM3hrZcKqcrTBUUt8qUJlicWuvca__c51Pb0VhiaVBBUtPJCu9_gDmpEnn0&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-cFOEPsf2CVPWWjiNjPXxX7cFGvBXE5k7C5qqoxsyq9g&amp;oe=62244FA8&quot;,&quot;320&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160790142_520098882312680_7190864355709334403_n.jpg?_nc_cat=108&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=UWrsTj1eOWAAX-pr8fv&amp;_nc_oc=AQnjlzqXgM3hrZcKqcrTBUUt8qUJlicWuvca__c51Pb0VhiaVBBUtPJCu9_gDmpEnn0&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-cFOEPsf2CVPWWjiNjPXxX7cFGvBXE5k7C5qqoxsyq9g&amp;oe=62244FA8&quot;,&quot;640&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160790142_520098882312680_7190864355709334403_n.jpg?_nc_cat=108&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=UWrsTj1eOWAAX-pr8fv&amp;_nc_oc=AQnjlzqXgM3hrZcKqcrTBUUt8qUJlicWuvca__c51Pb0VhiaVBBUtPJCu9_gDmpEnn0&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-cFOEPsf2CVPWWjiNjPXxX7cFGvBXE5k7C5qqoxsyq9g&amp;oe=62244FA8&quot;}">
-                                                                                                        <span
-                                                                                                            class="sbi-screenreader">Instagram
-                                                                                                            post
-                                                                                                            17914510495620947</span>
-                                                                                                        <img src="https://demo.casethemes.net/organio/wp-content/plugins/instagram-feed/img/placeholder.png"
-                                                                                                            alt="Instagram post 17914510495620947">
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="sbi_item sbi_type_image sbi_new sbi_transition"
-                                                                                                id="sbi_17888466862984838"
-                                                                                                data-date="1615867619">
-                                                                                                <div
-                                                                                                    class="sbi_photo_wrap">
-                                                                                                    <a class="sbi_photo"
-                                                                                                        href="https://www.instagram.com/p/CMdzId9Jeqo/"
-                                                                                                        target="_blank"
-                                                                                                        rel="noopener nofollow"
-                                                                                                        data-full-res="https://scontent-ort2-1.cdninstagram.com/v/t51.29350-15/161271827_191172625791711_1225591762254058110_n.jpg?_nc_cat=101&#038;ccb=1-5&#038;_nc_sid=8ae9d6&#038;_nc_ohc=fGRIgfv4gcwAX87IIbX&#038;_nc_ht=scontent-ort2-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT9LqduLWzrPr0TILyeb15w0MrvxO7peqBnMyUFdwM0TdQ&#038;oe=62248416"
-                                                                                                        data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/161271827_191172625791711_1225591762254058110_n.jpg?_nc_cat=101&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=fGRIgfv4gcwAX87IIbX&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9LqduLWzrPr0TILyeb15w0MrvxO7peqBnMyUFdwM0TdQ&amp;oe=62248416&quot;,&quot;150&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/161271827_191172625791711_1225591762254058110_n.jpg?_nc_cat=101&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=fGRIgfv4gcwAX87IIbX&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9LqduLWzrPr0TILyeb15w0MrvxO7peqBnMyUFdwM0TdQ&amp;oe=62248416&quot;,&quot;320&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/161271827_191172625791711_1225591762254058110_n.jpg?_nc_cat=101&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=fGRIgfv4gcwAX87IIbX&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9LqduLWzrPr0TILyeb15w0MrvxO7peqBnMyUFdwM0TdQ&amp;oe=62248416&quot;,&quot;640&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/161271827_191172625791711_1225591762254058110_n.jpg?_nc_cat=101&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=fGRIgfv4gcwAX87IIbX&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT9LqduLWzrPr0TILyeb15w0MrvxO7peqBnMyUFdwM0TdQ&amp;oe=62248416&quot;}">
-                                                                                                        <span
-                                                                                                            class="sbi-screenreader">Instagram
-                                                                                                            post
-                                                                                                            17888466862984838</span>
-                                                                                                        <img src="https://demo.casethemes.net/organio/wp-content/plugins/instagram-feed/img/placeholder.png"
-                                                                                                            alt="Instagram post 17888466862984838">
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="sbi_item sbi_type_image sbi_new sbi_transition"
-                                                                                                id="sbi_17881435106157658"
-                                                                                                data-date="1615867613">
-                                                                                                <div
-                                                                                                    class="sbi_photo_wrap">
-                                                                                                    <a class="sbi_photo"
-                                                                                                        href="https://www.instagram.com/p/CMdzHxip1XS/"
-                                                                                                        target="_blank"
-                                                                                                        rel="noopener nofollow"
-                                                                                                        data-full-res="https://scontent-ort2-1.cdninstagram.com/v/t51.29350-15/160300357_262853852155134_4639421379710860544_n.jpg?_nc_cat=103&#038;ccb=1-5&#038;_nc_sid=8ae9d6&#038;_nc_ohc=pwgIjX-SphQAX_ulL4n&#038;_nc_ht=scontent-ort2-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT-blH_IurhRlzk8tyjnwYWMl5lwrSNKzj2CdYiTdPNOXg&#038;oe=62260490"
-                                                                                                        data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160300357_262853852155134_4639421379710860544_n.jpg?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=pwgIjX-SphQAX_ulL4n&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-blH_IurhRlzk8tyjnwYWMl5lwrSNKzj2CdYiTdPNOXg&amp;oe=62260490&quot;,&quot;150&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160300357_262853852155134_4639421379710860544_n.jpg?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=pwgIjX-SphQAX_ulL4n&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-blH_IurhRlzk8tyjnwYWMl5lwrSNKzj2CdYiTdPNOXg&amp;oe=62260490&quot;,&quot;320&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160300357_262853852155134_4639421379710860544_n.jpg?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=pwgIjX-SphQAX_ulL4n&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-blH_IurhRlzk8tyjnwYWMl5lwrSNKzj2CdYiTdPNOXg&amp;oe=62260490&quot;,&quot;640&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160300357_262853852155134_4639421379710860544_n.jpg?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=pwgIjX-SphQAX_ulL4n&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-blH_IurhRlzk8tyjnwYWMl5lwrSNKzj2CdYiTdPNOXg&amp;oe=62260490&quot;}">
-                                                                                                        <span
-                                                                                                            class="sbi-screenreader">Instagram
-                                                                                                            post
-                                                                                                            17881435106157658</span>
-                                                                                                        <img src="https://demo.casethemes.net/organio/wp-content/plugins/instagram-feed/img/placeholder.png"
-                                                                                                            alt="Instagram post 17881435106157658">
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="sbi_item sbi_type_image sbi_new sbi_transition"
-                                                                                                id="sbi_17864434907368785"
-                                                                                                data-date="1615867607">
-                                                                                                <div
-                                                                                                    class="sbi_photo_wrap">
-                                                                                                    <a class="sbi_photo"
-                                                                                                        href="https://www.instagram.com/p/CMdzHFVp_cL/"
-                                                                                                        target="_blank"
-                                                                                                        rel="noopener nofollow"
-                                                                                                        data-full-res="https://scontent-ort2-1.cdninstagram.com/v/t51.29350-15/160824220_272293631058951_25353289917148256_n.jpg?_nc_cat=106&#038;ccb=1-5&#038;_nc_sid=8ae9d6&#038;_nc_ohc=W4CGTapGlKMAX8r0x-_&#038;_nc_ht=scontent-ort2-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT_Qm3LjY--ibIIXc5DKD80dMZTQxtOjxHahtGyQxIIlpg&#038;oe=62244308"
-                                                                                                        data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160824220_272293631058951_25353289917148256_n.jpg?_nc_cat=106&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=W4CGTapGlKMAX8r0x-_&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_Qm3LjY--ibIIXc5DKD80dMZTQxtOjxHahtGyQxIIlpg&amp;oe=62244308&quot;,&quot;150&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160824220_272293631058951_25353289917148256_n.jpg?_nc_cat=106&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=W4CGTapGlKMAX8r0x-_&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_Qm3LjY--ibIIXc5DKD80dMZTQxtOjxHahtGyQxIIlpg&amp;oe=62244308&quot;,&quot;320&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160824220_272293631058951_25353289917148256_n.jpg?_nc_cat=106&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=W4CGTapGlKMAX8r0x-_&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_Qm3LjY--ibIIXc5DKD80dMZTQxtOjxHahtGyQxIIlpg&amp;oe=62244308&quot;,&quot;640&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/160824220_272293631058951_25353289917148256_n.jpg?_nc_cat=106&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=W4CGTapGlKMAX8r0x-_&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_Qm3LjY--ibIIXc5DKD80dMZTQxtOjxHahtGyQxIIlpg&amp;oe=62244308&quot;}">
-                                                                                                        <span
-                                                                                                            class="sbi-screenreader">Instagram
-                                                                                                            post
-                                                                                                            17864434907368785</span>
-                                                                                                        <img src="https://demo.casethemes.net/organio/wp-content/plugins/instagram-feed/img/placeholder.png"
-                                                                                                            alt="Instagram post 17864434907368785">
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="sbi_item sbi_type_image sbi_new sbi_transition"
-                                                                                                id="sbi_17875951253287200"
-                                                                                                data-date="1615867588">
-                                                                                                <div
-                                                                                                    class="sbi_photo_wrap">
-                                                                                                    <a class="sbi_photo"
-                                                                                                        href="https://www.instagram.com/p/CMdzEwjpqtC/"
-                                                                                                        target="_blank"
-                                                                                                        rel="noopener nofollow"
-                                                                                                        data-full-res="https://scontent-ort2-1.cdninstagram.com/v/t51.29350-15/161432828_1556196047918593_925226802758570664_n.jpg?_nc_cat=109&#038;ccb=1-5&#038;_nc_sid=8ae9d6&#038;_nc_ohc=A1DCgTVCtlEAX9fRLGd&#038;_nc_ht=scontent-ort2-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT83VOOR-SiSxpeiobrcTLfyaf0Yr2-UM_ok5cESUCOi9g&#038;oe=6224E64F"
-                                                                                                        data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/161432828_1556196047918593_925226802758570664_n.jpg?_nc_cat=109&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=A1DCgTVCtlEAX9fRLGd&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT83VOOR-SiSxpeiobrcTLfyaf0Yr2-UM_ok5cESUCOi9g&amp;oe=6224E64F&quot;,&quot;150&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/161432828_1556196047918593_925226802758570664_n.jpg?_nc_cat=109&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=A1DCgTVCtlEAX9fRLGd&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT83VOOR-SiSxpeiobrcTLfyaf0Yr2-UM_ok5cESUCOi9g&amp;oe=6224E64F&quot;,&quot;320&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/161432828_1556196047918593_925226802758570664_n.jpg?_nc_cat=109&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=A1DCgTVCtlEAX9fRLGd&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT83VOOR-SiSxpeiobrcTLfyaf0Yr2-UM_ok5cESUCOi9g&amp;oe=6224E64F&quot;,&quot;640&quot;:&quot;https:\/\/scontent-ort2-1.cdninstagram.com\/v\/t51.29350-15\/161432828_1556196047918593_925226802758570664_n.jpg?_nc_cat=109&amp;ccb=1-5&amp;_nc_sid=8ae9d6&amp;_nc_ohc=A1DCgTVCtlEAX9fRLGd&amp;_nc_ht=scontent-ort2-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT83VOOR-SiSxpeiobrcTLfyaf0Yr2-UM_ok5cESUCOi9g&amp;oe=6224E64F&quot;}">
-                                                                                                        <span
-                                                                                                            class="sbi-screenreader">Instagram
-                                                                                                            post
-                                                                                                            17875951253287200</span>
-                                                                                                        <img src="https://demo.casethemes.net/organio/wp-content/plugins/instagram-feed/img/placeholder.png"
-                                                                                                            alt="Instagram post 17875951253287200">
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div id="sbi_load"></div> <span
-                                                                                            class="sbi_resized_image_data"
-                                                                                            data-feed-id="*1"
-                                                                                            data-resized="{&quot;17959653754394103&quot;:{&quot;id&quot;:&quot;160592051_437679624012421_2157246266541466556_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17914510495620947&quot;:{&quot;id&quot;:&quot;160790142_520098882312680_7190864355709334403_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17888466862984838&quot;:{&quot;id&quot;:&quot;161271827_191172625791711_1225591762254058110_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17881435106157658&quot;:{&quot;id&quot;:&quot;160300357_262853852155134_4639421379710860544_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17864434907368785&quot;:{&quot;id&quot;:&quot;160824220_272293631058951_25353289917148256_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17875951253287200&quot;:{&quot;id&quot;:&quot;161432828_1556196047918593_925226802758570664_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}}}">
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
+                                                                                    data-wow-delay="ms"> <span>Livraison 24h/24 </span></h6>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -6608,12 +5580,12 @@
                                                                                 <div
                                                                                     class="ct-text-editor elementor-clearfix">
                                                                                     © <span
-                                                                                        class="ct-year">2021</span>
-                                                                                    Organio &#8211; <a
+                                                                                        class="ct-year">2022</span>
+                                                                                    Organico &#8211; <a
                                                                                         href="https://themeforest.net/user/case-themes/portfolio"
                                                                                         target="_blank"
-                                                                                        rel="nofollow noopener">CaseThemes</a>.
-                                                                                    All rights reserved.</div>
+                                                                                        rel="nofollow noopener"></a>.
+                                                                                    Tout droit reservés.</div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
