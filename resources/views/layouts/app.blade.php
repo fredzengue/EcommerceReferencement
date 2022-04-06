@@ -3990,7 +3990,66 @@
         href='https://demo.casethemes.net/organio/wp-content/plugins/woo-variation-swatches/assets/css/frontend-tooltip.min.css?ver=1.1.19'
         type='text/css' media='all' />
     <script type="text/template" id="tmpl-variation-template">
-        <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability"> data.variation.availability_html</div>
+        <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability"> data.variation.availability_html</div> 
+                </script>
+    <script type="text/template" id="tmpl-unavailable-variation-template">
+        <p>Sorry, this product is unavailable. Please choose a different combination.</p> </script>
+    <script type='text/javascript' src='https://demo.casethemes.net/organio/wp-includes/js/jquery/jquery.min.js?ver=3.6.0'
+        id='jquery-core-js'></script>
+    <script type='text/javascript'
+        src='https://demo.casethemes.net/organio/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2'
+        id='jquery-migrate-js'></script>
+    <script type='text/javascript'
+        src='https://demo.casethemes.net/organio/wp-content/uploads/siteground-optimizer-assets/ct-main-js.min.js?ver=1.0.0'
+        id='ct-main-js-js'></script>
+    <script type='text/javascript'
+        src='https://demo.casethemes.net/organio/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.2.22'
+        id='tp-tools-js'></script>
+    <script type='text/javascript'
+        src='https://demo.casethemes.net/organio/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.22'
+        id='revmin-js'></script>
+    <script type='text/javascript'
+        src='https://demo.casethemes.net/organio/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=5.9.2'
+        id='ppress-flatpickr-js'></script>
+    <script type='text/javascript'
+        src='https://demo.casethemes.net/organio/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=5.9.2'
+        id='ppress-select2-js'></script>
+    <script type='text/javascript'
+        src='https://demo.casethemes.net/organio/wp-content/uploads/siteground-optimizer-assets/ct-inline-css-js.min.js?ver=1.5.0'
+        id='ct-inline-css-js-js'></script>
+    <link rel="https://api.w.org/" href="https://demo.casethemes.net/organio/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://demo.casethemes.net/organio/wp-json/wp/v2/pages/14" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD"
+        href="https://demo.casethemes.net/organio/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+        href="https://demo.casethemes.net/organio/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.9.2" />
+    <meta name="generator" content="WooCommerce 6.2.1" />
+    <link rel="canonical" href="https://demo.casethemes.net/organio/" />
+    <link rel='shortlink' href='https://demo.casethemes.net/organio/' />
+    <link rel="alternate" type="application/json+oembed"
+        href="https://demo.casethemes.net/organio/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.casethemes.net%2Forganio%2F" />
+    <link rel="alternate" type="text/xml+oembed"
+        href="https://demo.casethemes.net/organio/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.casethemes.net%2Forganio%2F&#038;format=xml" />
+    <meta name="generator" content="Redux 4.3.11" />
+    <link rel="icon" type="image/png"
+        href="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/favicon.png" /> <noscript>
+        <style>
+            .woocommerce-product-gallery {
+                opacity: 1 !important;
+            }
+
+        </style>
+    </noscript>
+    <meta name="generator"
+        content="Powered by Slider Revolution 6.2.22 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+    <script type="text/javascript">
+        function setREVStartSize(e) {
+            //window.requestAnimationFrame(function() { 
+            window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+            window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+            try {
+                var pw =         <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability"> data.variation.availability_html</div>
         </script>
     <script type="text/template" id="tmpl-unavailable-variation-template">
         <p>Sorry, this product is unavailable. Please choose a different combination.</p> </script>
@@ -4330,6 +4389,7 @@
                                 @if (Route::has('register'))
                                         <a class="nav-link" style="color: #fff" href="{{ route('register') }}">{{ __('Inscription') }}</a>
                                 @endif
+                                @else
                                 @endguest
                             <div class="ct-topbar-cart">
                                 <div class="header-right-item h-btn-cart"> <i class="caseicon-shopping-cart"></i>
@@ -4357,7 +4417,7 @@
                                             <li id="menu-item-25"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page megamenu megamenu-style-alt menu-item-has-children menu-item-25">
                                                 <a
-                                                    href="https://demo.casethemes.net/organio/shop/"><span>Produits</span></a>
+                                                    href="https://demo.casethemes.net/organio/shop/"><span>Pays</span></a>
                                                 <ul class="sub-menu">
                                                     <li>
                                                         <div class="container">
@@ -4717,16 +4777,8 @@
                                                 <a href="#"><span>Catégories</span></a>
                                                 <ul class="sub-menu">
                                                     <li id="menu-item-3718"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3718">
                                                         <a href="#"><span>Epices</span></a>
-                                                        <ul class="sub-menu">
-
-                                                            <li id="menu-item-3719"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
-                                                                <a href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
-                                                                        Up</span></a>
-                                                            </li>
-                                                        </ul>
                                                     </li>
                                                     <li id="menu-item-3718"
                                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
@@ -4734,89 +4786,34 @@
                                                         <ul class="sub-menu">
                                                             <li id="menu-item-3720"
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
-                                                                <a href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
-                                                                        In</span></a>
+                                                                <a href="https://demo.casethemes.net/organio/sign-in/"><span>Fruit secs</span></a>
                                                             </li>
                                                             <li id="menu-item-3719"
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
-                                                                <a href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
-                                                                        Up</span></a>
+                                                                <a href="https://demo.casethemes.net/organio/sign-up/"><span>Fruits frais</span></a>
                                                             </li>
                                                         </ul>
                                                     </li>
                                                     <li id="menu-item-3718"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3718">
                                                         <a href="#"><span>Légumes</span></a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-3720"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
-                                                                <a href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
-                                                                        In</span></a>
-                                                            </li>
-                                                            <li id="menu-item-3719"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
-                                                                <a href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
-                                                                        Up</span></a>
-                                                            </li>
-                                                        </ul>
                                                     </li>
                                                     <li id="menu-item-3718"
                                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
                                                         <a href="#"><span>Surgelés</span></a>
                                                         <ul class="sub-menu">
                                                             <li id="menu-item-3718"
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3718">
                                                                 <a href="#"><span>Poisson</span></a>
-                                                                <ul class="sub-menu">
-                                                                    <li id="menu-item-3720"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
-                                                                        <a
-                                                                            href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
-                                                                                In</span></a>
-                                                                    </li>
-                                                                    <li id="menu-item-3719"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
-                                                                        <a
-                                                                            href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
-                                                                                Up</span></a>
-                                                                    </li>
-                                                                </ul>
+                                                                
                                                             </li>
                                                             <li id="menu-item-3718"
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3718">
                                                                 <a href="#"><span>Viandes rouges</span></a>
-                                                                <ul class="sub-menu">
-                                                                    <li id="menu-item-3720"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
-                                                                        <a
-                                                                            href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
-                                                                                In</span></a>
-                                                                    </li>
-                                                                    <li id="menu-item-3719"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
-                                                                        <a
-                                                                            href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
-                                                                                Up</span></a>
-                                                                    </li>
-                                                                </ul>
                                                             </li>
                                                             <li id="menu-item-3718"
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
+                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3718">
                                                                 <a href="#"><span>Viandes blanches</span></a>
-                                                                <ul class="sub-menu">
-                                                                    <li id="menu-item-3720"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
-                                                                        <a
-                                                                            href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
-                                                                                In</span></a>
-                                                                    </li>
-                                                                    <li id="menu-item-3719"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
-                                                                        <a
-                                                                            href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
-                                                                                Up</span></a>
-                                                                    </li>
-                                                                </ul>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -5253,56 +5250,7 @@
 
         <!-- PAGE CONTENT -->
             @yield('content')
-        <!--END PAGE CONTENT -->
-
-        <footer id="colophon" class="site-footer-custom">
-            <div class="footer-custom-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div data-elementor-type="wp-post" data-elementor-id="30" class="elementor elementor-30"
-                                data-elementor-settings="[]">
-                                <div class="elementor-section-wrap">
-                                    <section
-                                        class="elementor-section elementor-top-section elementor-element elementor-element-8773834 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                                        data-id="8773834" data-element_type="section"
-                                        data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-                                        <div class="elementor-container elementor-column-gap-extended ">
-                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3648b42"
-                                                data-id="3648b42" data-element_type="column">
-                                                <div class="elementor-widget-wrap elementor-element-populated">
-                                                    <section
-                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-9fc7fb9 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                        data-id="9fc7fb9" data-element_type="section">
-                                                        <div
-                                                            class="elementor-container elementor-column-gap-extended ">
-                                                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-270589d"
-                                                                data-id="270589d" data-element_type="column">
-                                                                <div
-                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                    <div class="elementor-element elementor-element-b064e56 elementor-widget elementor-widget-ct_mailchimp_form"
-                                                                        data-id="b064e56" data-element_type="widget"
-                                                                        data-widget_type="ct_mailchimp_form.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <div class="ct-mailchimp ct-mailchimp1 bg-image style2"
-                                                                                style="background-image: url(https://demo.casethemes.net/organio/wp-content/uploads/2021/03/bg-mailchimp.jpg);">
-                                                                                <div class="ct-mailchimp-inner">
-                                                                                    <div
-                                                                                        class="ct-mailchimp-image-left">
-                                                                                        <img width="400" height="203"
-                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/mailchimp-image1.png"
-                                                                                            class="attachment-full"
-                                                                                            alt="" />
-                                                                                    </div>
-                                                                                    <div class="ct-mailchimp-meta">
-                                                                                        <h4 class="wg-title">
-                                                                                            S'inscrire à notre Newsletter:
-                                                                                        </h4>
-                                                                                    </div>
-                                                                                    <script>
-                                                                                        (function() {
-                                                                                            window.mc4wp = window.mc4wp || {
-                                                                                                listeners: [],
+                                                                           listeners: [],
                                                                                                 forms: {
                                                                                                     on: function(evt, cb) {
                                                                                                         window.mc4wp.listeners.push({
