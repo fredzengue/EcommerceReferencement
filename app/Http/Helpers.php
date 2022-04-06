@@ -11,4 +11,4 @@ function getCategoriesSubcategories(){
 }
 function getCountriesCategories() {
     return Country::with('categories')->get();
-}git 
+}

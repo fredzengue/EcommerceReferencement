@@ -3827,7 +3827,7 @@
                                             <li id="menu-item-25"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page megamenu megamenu-style-alt menu-item-has-children menu-item-25">
                                                 <a
-                                                    href="https://demo.casethemes.net/organio/shop/"><span>Pays</span></a>
+                                                    href="#"><span>Pays</span></a>
                                                 <ul class="sub-menu">
                                                     <li>
                                                         <div class="container">
@@ -3871,7 +3871,7 @@
                                                                                                     @foreach ($country->categories as $category)
                                                                                                     <li> 
                                                                                                         <a href="https://demo.casethemes.net/organio/product-grid-2-columns/">
-                                                                                                            <span>{{$category}}</span>
+                                                                                                            <span>{{$category->name}}</span>
                                                                                                         </a>
                                                                                                     </li>
                                                                                                     @endforeach
