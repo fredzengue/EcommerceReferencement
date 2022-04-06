@@ -4352,7 +4352,7 @@
                                             <li id="menu-item-22"
                                                 class="menu-item current-menu-item current_page_item menu-item-type-post_type menu-item-object-page menu-item-22">
                                                 <a
-                                                    href="https://demo.casethemes.net/organio/about/"><span>Accueil</span></a>
+                                                    href="/"><span>Accueil</span></a>
                                             </li>
                                             <li id="menu-item-25"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page megamenu megamenu-style-alt menu-item-has-children menu-item-25">
@@ -4861,7 +4861,7 @@
                                             <li
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
                                                 <a
-                                                    href="https://demo.casethemes.net/organio/about/"><span>About</span></a>
+                                                    href="/about-us"><span>About</span></a>
                                             </li>
                                             <li
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24">
@@ -5181,7 +5181,7 @@
                                             <li id="menu-item-22"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
                                                 <a
-                                                    href="https://demo.casethemes.net/organio/about/"><span>A propos</span></a>
+                                                    href="/about-us"><span>A propos</span></a>
                                             </li>
                                             <li id="menu-item-22"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
