@@ -3990,7 +3990,7 @@
         href='https://demo.casethemes.net/organio/wp-content/plugins/woo-variation-swatches/assets/css/frontend-tooltip.min.css?ver=1.1.19'
         type='text/css' media='all' />
     <script type="text/template" id="tmpl-variation-template">
-        <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability"> data.variation.availability_html</div> 
+        <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability"> data.variation.availability_html</div>
         </script>
     <script type="text/template" id="tmpl-unavailable-variation-template">
         <p>Sorry, this product is unavailable. Please choose a different combination.</p> </script>
@@ -4045,7 +4045,7 @@
         content="Powered by Slider Revolution 6.2.22 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
     <script type="text/javascript">
         function setREVStartSize(e) {
-            //window.requestAnimationFrame(function() { 
+            //window.requestAnimationFrame(function() {
             window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
             window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
             try {
@@ -6075,9 +6075,7 @@
         </header>
 
         <!-- PAGE CONTENT -->
-        <div id="content" class="site-content">
             @yield('content')
-        </div>
         <!--END PAGE CONTENT -->
 
         <footer id="colophon" class="site-footer-custom">
