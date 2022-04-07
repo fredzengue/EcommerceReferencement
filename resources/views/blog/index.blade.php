@@ -5,11 +5,11 @@
     <div class="container">
         <div class="page-title-inner">
             <div class="page-title-holder">
-                <h1 class="page-title">Blog List : Full Width</h1>
+                <h1 class="page-title">Blog</h1>
             </div>
             <ul class="ct-breadcrumb">
-                <li><a class="breadcrumb-entry" href="https://demo.casethemes.net/organio/">Home</a></li>
-                <li><span class="breadcrumb-entry">Blog List : Full Width</span></li>
+                <li><a class="breadcrumb-entry" href="https://demo.casethemes.net/organio/">Accueil</a></li>
+                <li><span class="breadcrumb-entry">Blog</span></li>
             </ul>
         </div>
     </div>
@@ -34,7 +34,7 @@
                                     <ul class="entry-meta ct-item-meta">
                                         <li class="item-date"><i class="caseicon-clock"></i>March 17,
                                             2021</li>
-                                        <li class="item-author"><i class="caseicon-user-alt"></i>By <a
+                                        <li class="item-author"><i class="caseicon-user-alt"></i>De <a
                                                 href="https://demo.casethemes.net/organio/author/admin/"
                                                 title="Posts by Mike Dooley" rel="author">Mike Dooley</a></li>
                                         <li class="item-category"><i class="caseicon-tags-alt"></i><a

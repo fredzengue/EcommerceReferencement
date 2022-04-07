@@ -16,7 +16,7 @@ class CountrySeeder extends Seeder
     {
         Country::created([
             'name' => 'cameroun'
-        ])->categories()->attach();
+        ]);
         Country::created([
             'name' => 'benin'
         ]);

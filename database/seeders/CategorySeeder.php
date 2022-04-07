@@ -14,18 +14,29 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        Category::countries()->attach([
-            rand(1,4),
-            rand(1,4)
+        Category::create([
+            'name' => 'épices'
+        ])->countries()->attach([
+            rand(1, 6),
+            rand(1, 6)
         ]);
-        Category::created([
-            'name' => 'surgelés'
-        ]);
-        Category::created([
+        Category::create([
             'name' => 'fruits'
+        ])->countries()->attach([
+            rand(1, 6),
+            rand(1, 6)
         ]);
-        Category::created([
+        Category::create([
+            'name' => 'surgelés'
+        ])->countries()->attach([
+            rand(1, 6),
+            rand(1, 6)
+        ]);
+        Category::create([
             'name' => 'légumes'
+        ])->countries()->attach([
+            rand(1, 6),
+            rand(1, 6)
         ]);
     }
 }
