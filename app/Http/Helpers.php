@@ -12,3 +12,13 @@ function getCategoriesSubcategories(){
 function getCountriesCategories() {
     return Country::with('categories')->get();
 }
+
+function randomCountry($length){
+    $digits = array();
+    $numbers = range(1,4);
+    shuffle($numbers);
+    for($i = 0; $i < $length; $i++){
+       	array_push($digits,$numbers[$i]);
+    }
+    return $digits;
+}

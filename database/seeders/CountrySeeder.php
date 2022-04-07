@@ -14,46 +14,26 @@ class CountrySeeder extends Seeder
      */
     public function run()
     {
+        $a = rand(1, 4);
+        $b = rand(1, 4);
+       
         Country::create([
             'name' => 'benin'
-        ])->categories()->attach([
-            rand(1, 4),
-            rand(1, 4)
-        ]);
+        ])->categories()->attach(randomCountry(2));
         Country::create([
             'name' => 'cameroun'
-        ])->categories()->attach([
-            rand(1, 4),
-            rand(1, 4),
-            rand(1, 4),
-            rand(1, 4)
-        ]);
+        ])->categories()->attach(randomCountry(4));
         Country::create([
             'name' => 'nigéria'
-        ])->categories()->attach([
-            rand(1, 4),
-            rand(1, 4),
-            rand(1, 4)
-        ]);
+        ])->categories()->attach(randomCountry(3));
         Country::create([
             'name' => 'congo'
-        ])->categories()->attach([
-            rand(1, 4),
-            rand(1, 4),
-            rand(1, 4),
-            rand(1, 4)
-        ]);
+        ])->categories()->attach(randomCountry(4));
         Country::create([
             'name' => 'maroc'
-        ])->categories()->attach([
-            rand(1, 4)
-        ]);
+        ])->categories()->attach(randomCountry(1));
         Country::create([
             'name' => 'sénégal'
-        ])->categories()->attach([
-            rand(1, 4),
-            rand(1, 4),
-            rand(1, 4)
-        ]);
+        ])->categories()->attach(randomCountry(3));
     }
 }
