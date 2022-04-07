@@ -18,11 +18,13 @@ class CreatedCategoryCountryTable extends Migration
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')
                   ->references('id')
-                  ->on('categories');
+                  ->on('categories')
+                  ->onDelete('cascade');
             $table->unsignedBigInteger('country_id');
             $table->foreign('country_id')
                         ->references('id')
-                        ->on('countries');
+                        ->on('countries')
+                        ->onDelete('cascade');
             $table->timestamps();
         });
     }
