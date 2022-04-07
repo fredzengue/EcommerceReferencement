@@ -3770,7 +3770,7 @@
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2231">
                                             <a href="#"><span class="ct-icon-menu"><i></i></span><span>Catégories</span></a>
                                             <ul class="sub-menu">
-                                                @foreach (getCategoriesSubcategories() as $category)
+                                               <!-- @foreach (getCategoriesSubcategories() as $category)
                                                 @if ($category->name == 'surgelés')
                                                 <li id="menu-item-2277" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-2277">
                                                     <a href="#">
@@ -3786,7 +3786,7 @@
                                                                 <span>{{$subcategory->name}}</span>
                                                             </a>
                                                         </li>
-                                                        @endforeach
+                                                        @endforeach-->
                                                     </ul>
                                                 </li> 
                                                 @else
