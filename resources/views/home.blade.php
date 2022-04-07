@@ -964,13 +964,11 @@
                                                                     </div>
                                                                     <div class="item--holder">
                                                                         <h4 class="item--title wow fadeInUp"
-                                                                            data-wow-delay="50ms"> Get 10% off
-                                                                            on Vegetables</h4>
+                                                                            data-wow-delay="50ms"> Avoir 10% de réductions</h4>
                                                                         <div class="item--description wow fadeInUp"
-                                                                            data-wow-delay="ms">Shop our
-                                                                            selection of organic fresh
-                                                                            vegetables in a discounted price.
-                                                                            10% off on all vegetables.</div> <a
+                                                                            data-wow-delay="ms">Achetez nos produits
+                                                                            vegetales à un prix abordable.
+                                                                            10% de reduction pour tous nos produits vegetales.</div> <a
                                                                             class="btn item--button-outline wow fadeInUp"
                                                                             data-wow-delay="150ms"
                                                                             href="https://demo.casethemes.net/organio/shop/">
@@ -1040,11 +1038,11 @@
                                                             data-widget_type="ct_image.default">
                                                             <div class="elementor-widget-container">
                                                                 <div class="ct-image-single    " data-width=""
-                                                                    data-height=""> <img width="654"
-                                                                        height="506"
-                                                                        src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/about-img2.jpg"
-                                                                        class="no-lazyload attachment-full"
-                                                                        alt="" /></div>
+                                                                    data-height=""><img width="654"
+                                                                    height="506"
+                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/about-img2.jpg"
+                                                                    class="no-lazyload attachment-full"
+                                                                    alt="" /></div>
                                                             </div>
                                                         </div>
                                                     </div>
