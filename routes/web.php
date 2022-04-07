@@ -21,7 +21,12 @@ Route::get('/', function () {
 /* products routes */
 Route::get('/products/{rowId}', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
 Route::get('/products/single/{rowId}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
-
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/blog', function () {
+    return view('blog.index');
+});
 Route::get('/about-us', function () {
     return view('about-us');
 });
