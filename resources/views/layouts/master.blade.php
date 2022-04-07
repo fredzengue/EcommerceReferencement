@@ -3771,22 +3771,6 @@
                                             <a href="#"><span class="ct-icon-menu"><i></i></span><span>Catégories</span></a>
                                             <ul class="sub-menu">
                                                 
-                                                    </ul>
-                                                </li> 
-                                                @else
-                                                <li id="menu-item-2278"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2278">
-                                                <a href="https://demo.casethemes.net/organio/product-category/grocery-frozen/">
-                                                    <span class="link-icon left-icon">
-                                                        <i class="flaticon-cardboard"></i>
-                                                    </span>
-                                                    <span class="ct-icon-menu"><i></i></span>
-                                                    <span>{{$category->name}}</span>
-                                                </a>
-                                                </li>
-                                                @endif
-                                                
-                                                @endforeach
                                             </ul>
                                         </li>
                                     </ul>
