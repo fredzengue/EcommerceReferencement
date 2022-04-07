@@ -31,11 +31,11 @@
                                                                                 aria-hidden="true"
                                                                                 class="flaticon flaticon-map"></i>
                                                                         </div>
-                                                                        <h4 class="item--title"> Address:
+                                                                        <h4 class="item--title"> Addresse:
                                                                         </h4>
-                                                                        <div class="item--description">30
-                                                                            Commercial Road Fratton,
-                                                                            </br>Australia</div>
+                                                                        <div class="item--description">
+                                                                            3 rue de la justice, 95000
+                                                                            </br>Cergy</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -57,8 +57,8 @@
                                                                                 aria-hidden="true"
                                                                                 class="flaticon flaticon-phone-call"></i>
                                                                         </div>
-                                                                        <h4 class="item--title"> Phone
-                                                                            Number:</h4>
+                                                                        <h4 class="item--title">
+                                                                            Téléphone:</h4>
                                                                         <div class="item--description">
                                                                             1-888-452-1505</br> 1-888-452-1340
                                                                         </div>
@@ -83,8 +83,7 @@
                                                                                 aria-hidden="true"
                                                                                 class="flaticon flaticon-email"></i>
                                                                         </div>
-                                                                        <h4 class="item--title"> Mail
-                                                                            Address:</h4>
+                                                                        <h4 class="item--title">Addresse mail:</h4>
                                                                         <div class="item--description">
                                                                             info@organico.com</br>
                                                                             sales@envato.com</div>
@@ -115,26 +114,25 @@
                                                                 <div
                                                                     class="ct-heading h-align-center item-st-default">
                                                                     <div class="item--sub-title style-default">
-                                                                        <span> <span>~</span> Contact Us
+                                                                        <span> <span>~</span> Contactez-nous
                                                                             <span>~</span> </span></div>
                                                                     <h3 class="item--title case-animate-time st-default "
                                                                         data-wow-delay="ms"> <span
                                                                             class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">Feel</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">N'hesitez</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">free</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">pas</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">to</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">à nous</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">contact</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">contacter</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">with</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">à</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">us</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">tout</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">any</span></span>
-                                                                        <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">time.</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">moment.</span></span>
+                                                                        
                                                                     </h3>
                                                                 </div>
                                                             </div>
@@ -184,8 +182,7 @@
                                                                                 <div class="row">
                                                                                     <div
                                                                                         class="input-filled col-lg-6 col-md-6">
-                                                                                        <label>Full
-                                                                                            name*</label><span
+                                                                                        <label>Nom complet*</label><span
                                                                                             class="wpcf7-form-control-wrap your-name"><input
                                                                                                 type="text"
                                                                                                 name="your-name"
@@ -198,8 +195,7 @@
                                                                                     </div>
                                                                                     <div
                                                                                         class="input-filled col-lg-6 col-md-6">
-                                                                                        <label>Mail
-                                                                                            address*</label><span
+                                                                                        <label>Adresse mail*</label><span
                                                                                             class="wpcf7-form-control-wrap your-email"><input
                                                                                                 type="email"
                                                                                                 name="your-email"
@@ -214,8 +210,7 @@
                                                                                 <div class="row">
                                                                                     <div
                                                                                         class="input-filled col-12">
-                                                                                        <label>Type your
-                                                                                            message*</label><span
+                                                                                        <label>Envoyez votre message*</label><span
                                                                                             class="wpcf7-form-control-wrap your-message">
                                                                                             <blade
                                                                                                 ___html_tags_0___ />
@@ -223,9 +218,7 @@
                                                                                     <div
                                                                                         class="input-filled col-12 text-center">
                                                                                         <button type="submit"
-                                                                                            class="wpcf7-submit btn btn-third btn-animate">Send
-                                                                                            your
-                                                                                            message</button>
+                                                                                            class="wpcf7-submit btn btn-third btn-animate">Envoyez</button>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="wpcf7-response-output"

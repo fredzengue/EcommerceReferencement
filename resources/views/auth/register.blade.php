@@ -5,11 +5,11 @@
     <div class="container">
         <div class="page-title-inner">
             <div class="page-title-holder">
-                <h1 class="page-title">Sign Up</h1>
+                <h1 class="page-title">S'inscrire</h1>
             </div>
             <ul class="ct-breadcrumb">
-                <li><a class="breadcrumb-entry" href="https://demo.casethemes.net/organio/">Home</a></li>
-                <li><span class="breadcrumb-entry">Sign Up</span></li>
+                <li><a class="breadcrumb-entry" href="https://demo.casethemes.net/organio/">Accueil</a></li>
+                <li><span class="breadcrumb-entry">S'identifier</span></li>
             </ul>
         </div>
     </div>
@@ -44,7 +44,7 @@
                                                                         <div class="ct-user-holder">
                                                                             <div class="ct-user-meta">
                                                                                 <h4 class="ct-user-title">
-                                                                                    Create your account</h4>
+                                                                                    Créez votre compte</h4>
                                                                                 <div class="ct-user-form">
                                                                                     <div
                                                                                         class="ct-user-form-body ct-user-form-register">
@@ -107,8 +107,8 @@
                                                                                                     class="field-group">
                                                                                                     <button
                                                                                                         type="button"
-                                                                                                        class="button btn-up-register">Create
-                                                                                                        Account</button>
+                                                                                                        class="button btn-up-register">Créer un compte
+                                                                                                          </button>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -116,9 +116,9 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="ct-user-bottom">
-                                                                                Already have an account? <a
-                                                                                    href="https://demo.casethemes.net/organio/sign-in/">Log
-                                                                                    In</a></div>
+                                                                                Vous avez déjà un compte? <a
+                                                                                    href="https://demo.casethemes.net/organio/sign-in/">Connexion
+                                                                                    </a></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>

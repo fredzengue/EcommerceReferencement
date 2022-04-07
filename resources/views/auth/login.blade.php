@@ -5,11 +5,11 @@
     <div class="container">
         <div class="page-title-inner">
             <div class="page-title-holder">
-                <h1 class="page-title">Sign In</h1>
+                <h1 class="page-title">S'inscrire</h1>
             </div>
             <ul class="ct-breadcrumb">
-                <li><a class="breadcrumb-entry" href="https://demo.casethemes.net/organio/">Home</a></li>
-                <li><span class="breadcrumb-entry">Sign In</span></li>
+                <li><a class="breadcrumb-entry" href="https://demo.casethemes.net/organio/">Accueil</a></li>
+                <li><span class="breadcrumb-entry">S'identifier</span></li>
             </ul>
         </div>
     </div>
@@ -43,8 +43,8 @@
                                                                     <div class="ct-user-inner">
                                                                         <div class="ct-user-holder">
                                                                             <div class="ct-user-meta">
-                                                                                <h4 class="ct-user-title">Log
-                                                                                    in to Your Account</h4>
+                                                                                <h4 class="ct-user-title">Connectez-vous à votre compte
+                                                                                    à votre compte</h4>
                                                                                 <div class="ct-user-form">
                                                                                     <div
                                                                                         class="ct-user-form-body ct-user-form-login">
@@ -78,22 +78,21 @@
                                                                                                     class="field-group field-footer-group">
                                                                                                     <button
                                                                                                         type="button"
-                                                                                                        class="button button-login">Log
-                                                                                                        In</button>
+                                                                                                        class="button button-login">S'identifier</button>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="ct-user-bottom"> New to
-                                                                                Organico? <a
-                                                                                    href="https://demo.casethemes.net/organio/sign-up/">Sign
-                                                                                    Up</a></div>
+                                                                            <div class="ct-user-bottom"> Nouveau
+                                                                                client? <a
+                                                                                    href="https://demo.casethemes.net/organio/sign-up/">S'inscrire
+                                                                                    </a></div>
                                                                         </div>
                                                                         <div class="ct-user-footer"> <a
-                                                                                href="https://demo.casethemes.net/organio/my-account/lost-password/">Forgot
-                                                                                your password?</a></div>
+                                                                                href="https://demo.casethemes.net/organio/my-account/lost-password/">Vous avez oublié?
+																				votre mot de passe</a></div>
                                                                     </div>
                                                                 </div>
                                                             </div>

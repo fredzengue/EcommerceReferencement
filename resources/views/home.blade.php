@@ -1020,6 +1020,8 @@
                                             </div>
                                         </section>
                                         <section
+<<<<<<< HEAD
+=======
                                             class="elementor-section elementor-top-section elementor-element elementor-element-1a246b02 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                             data-id="1a246b02" data-element_type="section"
                                             data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
@@ -1033,11 +1035,11 @@
                                                             data-widget_type="ct_image.default">
                                                             <div class="elementor-widget-container">
                                                                 <div class="ct-image-single    " data-width=""
-                                                                    data-height=""> <img width="654"
-                                                                        height="506"
-                                                                        src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/about-img2.jpg"
-                                                                        class="no-lazyload attachment-full"
-                                                                        alt="" /></div>
+                                                                    data-height=""><img width="654"
+                                                                    height="506"
+                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/about-img2.jpg"
+                                                                    class="no-lazyload attachment-full"
+                                                                    alt="" /></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1986,6 +1988,7 @@
                                             </div>
                                         </section>
                                         <section
+>>>>>>> df2525f649e0a7980878b5603bfbe04731d5372b
                                             class="elementor-section elementor-top-section elementor-element elementor-element-673872e2 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                             data-id="673872e2" data-element_type="section"
                                             data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
@@ -1994,74 +1997,6 @@
                                                     data-id="6cb0e8fd" data-element_type="column">
                                                     <div
                                                         class="elementor-widget-wrap elementor-element-populated">
-                                                        <section
-                                                            class="elementor-section elementor-inner-section elementor-element elementor-element-404f427e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                            data-id="404f427e" data-element_type="section">
-                                                            <div
-                                                                class="elementor-container elementor-column-gap-extended ">
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5bfb0015"
-                                                                    data-id="5bfb0015"
-                                                                    data-element_type="column">
-                                                                    <div class="elementor-widget-wrap"></div>
-                                                                </div>
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7120302"
-                                                                    data-id="7120302"
-                                                                    data-element_type="column">
-                                                                    <div
-                                                                        class="elementor-widget-wrap elementor-element-populated">
-                                                                        <div class="elementor-element elementor-element-d96260b elementor-widget elementor-widget-ct_heading"
-                                                                            data-id="d96260b"
-                                                                            data-element_type="widget"
-                                                                            data-widget_type="ct_heading.default">
-                                                                            <div
-                                                                                class="elementor-widget-container">
-                                                                                <div
-                                                                                    class="ct-heading h-align-center item-st-default">
-                                                                                    <div
-                                                                                        class="item--sub-title style-default">
-                                                                                        <span> <span>~</span>
-                                                                                            Products
-                                                                                            <span>~</span>
-                                                                                        </span></div>
-                                                                                    <h3 class="item--title case-animate-time st-default "
-                                                                                        data-wow-delay="ms">
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">All</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">of</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">our</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">products</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">are</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">organic</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">&</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">fresh.</span></span>
-                                                                                    </h3>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-75e89df9"
-                                                                    data-id="75e89df9"
-                                                                    data-element_type="column">
-                                                                    <div class="elementor-widget-wrap"></div>
-                                                                </div>
-                                                            </div>
-                                                        </section>
                                                         <div class="elementor-element elementor-element-df93ff8 elementor-widget elementor-widget-ct_product_carousel"
                                                             data-id="df93ff8" data-element_type="widget"
                                                             data-widget_type="ct_product_carousel.default">
@@ -2784,24 +2719,23 @@
                                                                     class="ct-heading h-align- item-st-default">
                                                                     <div
                                                                         class="item--sub-title style-default">
-                                                                        <span> <span>~</span> Best Deals of the
-                                                                            week! <span>~</span> </span></div>
+                                                                        <span> <span>~</span> Meuilleure en produit naturel ! <span>~</span> </span></div>
                                                                     <h3 class="item--title case-animate-time st-default "
                                                                         data-wow-delay="ms"> <span
                                                                             class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">Grab</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">Faites</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">the</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">vos</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">best</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">achats</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">offer</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">chez</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">of</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">nous</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">this</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">!</span></span>
                                                                         <span class="slide-in-container"><span
-                                                                                class="d-inline-block wow case-fade-in-up">week!</span></span>
+                                                                                class="d-inline-block wow case-fade-in-up">!</span></span>
                                                                     </h3>
                                                                 </div>
                                                             </div>
@@ -2838,392 +2772,6 @@
                                                                         src="https://demo.casethemes.net/organio/wp-content/uploads/2021/04/counter-banner1.png"
                                                                         class="no-lazyload attachment-full"
                                                                         alt="" /></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section
-                                            class="elementor-section elementor-top-section elementor-element elementor-element-74f4215 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                            data-id="74f4215" data-element_type="section"
-                                            data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-                                            <div class="elementor-container elementor-column-gap-extended ">
-                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bec4dad"
-                                                    data-id="bec4dad" data-element_type="column">
-                                                    <div
-                                                        class="elementor-widget-wrap elementor-element-populated">
-                                                        <section
-                                                            class="elementor-section elementor-inner-section elementor-element elementor-element-f2256ee elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                            data-id="f2256ee" data-element_type="section">
-                                                            <div
-                                                                class="elementor-container elementor-column-gap-extended ">
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a7d66e8"
-                                                                    data-id="a7d66e8"
-                                                                    data-element_type="column">
-                                                                    <div class="elementor-widget-wrap"></div>
-                                                                </div>
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3404cee"
-                                                                    data-id="3404cee"
-                                                                    data-element_type="column">
-                                                                    <div
-                                                                        class="elementor-widget-wrap elementor-element-populated">
-                                                                        <div class="elementor-element elementor-element-ced7899 elementor-widget elementor-widget-ct_heading"
-                                                                            data-id="ced7899"
-                                                                            data-element_type="widget"
-                                                                            data-widget_type="ct_heading.default">
-                                                                            <div
-                                                                                class="elementor-widget-container">
-                                                                                <div
-                                                                                    class="ct-heading h-align-center item-st-default">
-                                                                                    <div
-                                                                                        class="item--sub-title style-default">
-                                                                                        <span> <span>~</span>
-                                                                                            Team member
-                                                                                            <span>~</span>
-                                                                                        </span></div>
-                                                                                    <h3 class="item--title case-animate-time st-default "
-                                                                                        data-wow-delay="ms">
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">We</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">have</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">awesome</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">team</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">member</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">to</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">help</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">support.</span></span>
-                                                                                    </h3>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2d4d2ab"
-                                                                    data-id="2d4d2ab"
-                                                                    data-element_type="column">
-                                                                    <div class="elementor-widget-wrap"></div>
-                                                                </div>
-                                                            </div>
-                                                        </section>
-                                                        <div class="elementor-element elementor-element-aceadbe elementor-widget elementor-widget-ct_team_carousel"
-                                                            data-id="aceadbe" data-element_type="widget"
-                                                            data-widget_type="ct_team_carousel.default">
-                                                            <div class="elementor-widget-container">
-                                                                <div
-                                                                    class="ct-team ct-team-carousel1 ct-slick-slider">
-                                                                    <div class="ct-carousel-inner">
-                                                                        <div class="ct-slick-carousel"
-                                                                            data-arrows="" data-dots="true"
-                                                                            data-pauseOnHover=""
-                                                                            data-autoplay=""
-                                                                            data-autoplaySpeed="5000"
-                                                                            data-infinite="" data-speed="500"
-                                                                            data-colxs="1" data-colsm="2"
-                                                                            data-colmd="2" data-collg="3"
-                                                                            data-colxl="3" data-dir="false"
-                                                                            data-slidesToScroll="1">
-                                                                            <div class="slick-slide">
-                                                                                <div class="item--inner ">
-                                                                                    <div
-                                                                                        class="item--image">
-                                                                                        <img class="no-lazyload "
-                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/author1-176x176.jpg"
-                                                                                            width="176"
-                                                                                            height="176"
-                                                                                            alt="author1"
-                                                                                            title="author1" />
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="item--holder">
-                                                                                        <div
-                                                                                            class="item--meta">
-                                                                                            <h3
-                                                                                                class="item--title">
-                                                                                                Alisa Lisa</h3>
-                                                                                            <div
-                                                                                                class="item--position">
-                                                                                                Customer Care
-                                                                                                Officer</div>
-                                                                                            <div
-                                                                                                class="item--image-fixed">
-                                                                                                <img width="95"
-                                                                                                    height="90"
-                                                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/team-leaf.png"
-                                                                                                    class="attachment-full"
-                                                                                                    alt="" /><img
-                                                                                                    width="95"
-                                                                                                    height="90"
-                                                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/team-leaf.png"
-                                                                                                    class="attachment-full"
-                                                                                                    alt="" />
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="item--description">
-                                                                                            Lisa focuses on
-                                                                                            providing customers
-                                                                                            with Organic and
-                                                                                            Fair Trade Food.
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="item--social">
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-facebook-f"></i></a>
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-twitter"></i></a>
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-dribbble"></i></a>
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-behance"></i></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="slick-slide">
-                                                                                <div class="item--inner ">
-                                                                                    <div
-                                                                                        class="item--image">
-                                                                                        <img class="no-lazyload "
-                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/author2-176x176.jpg"
-                                                                                            width="176"
-                                                                                            height="176"
-                                                                                            alt="author2"
-                                                                                            title="author2" />
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="item--holder">
-                                                                                        <div
-                                                                                            class="item--meta">
-                                                                                            <h3
-                                                                                                class="item--title">
-                                                                                                Robert Leo</h3>
-                                                                                            <div
-                                                                                                class="item--position">
-                                                                                                Farmer</div>
-                                                                                            <div
-                                                                                                class="item--image-fixed">
-                                                                                                <img width="95"
-                                                                                                    height="90"
-                                                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/team-leaf.png"
-                                                                                                    class="attachment-full"
-                                                                                                    alt="" /><img
-                                                                                                    width="95"
-                                                                                                    height="90"
-                                                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/team-leaf.png"
-                                                                                                    class="attachment-full"
-                                                                                                    alt="" />
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="item--description">
-                                                                                            Lisa focuses on
-                                                                                            providing customers
-                                                                                            with Organic and
-                                                                                            Fair Trade Food.
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="item--social">
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-facebook-f"></i></a>
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-twitter"></i></a>
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-dribbble"></i></a>
-                                                                                            <a href=""><i
-                                                                                                    class="fab fa-behance"></i></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="slick-slide">
-                                                                                <div class="item--inner ">
-                                                                                    <div
-                                                                                        class="item--image">
-                                                                                        <img class="no-lazyload "
-                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/author3-176x176.jpg"
-                                                                                            width="176"
-                                                                                            height="176"
-                                                                                            alt="author3"
-                                                                                            title="author3" />
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="item--holder">
-                                                                                        <div
-                                                                                            class="item--meta">
-                                                                                            <h3
-                                                                                                class="item--title">
-                                                                                                Nora Bell</h3>
-                                                                                            <div
-                                                                                                class="item--position">
-                                                                                                Sales Executive
-                                                                                            </div>
-                                                                                            <div
-                                                                                                class="item--image-fixed">
-                                                                                                <img width="95"
-                                                                                                    height="90"
-                                                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/team-leaf.png"
-                                                                                                    class="attachment-full"
-                                                                                                    alt="" /><img
-                                                                                                    width="95"
-                                                                                                    height="90"
-                                                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/team-leaf.png"
-                                                                                                    class="attachment-full"
-                                                                                                    alt="" />
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="item--description">
-                                                                                            Lisa focuses on
-                                                                                            providing customers
-                                                                                            with Organic and
-                                                                                            Fair Trade Food.
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="item--social">
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-facebook-f"></i></a>
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-twitter"></i></a>
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-dribbble"></i></a>
-                                                                                            <a href=""><i
-                                                                                                    class="fab fa-behance"></i></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="slick-slide">
-                                                                                <div class="item--inner ">
-                                                                                    <div
-                                                                                        class="item--image">
-                                                                                        <img class="no-lazyload "
-                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/author6-176x176.jpg"
-                                                                                            width="176"
-                                                                                            height="176"
-                                                                                            alt="author6"
-                                                                                            title="author6" />
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="item--holder">
-                                                                                        <div
-                                                                                            class="item--meta">
-                                                                                            <h3
-                                                                                                class="item--title">
-                                                                                                Sherri Horton
-                                                                                            </h3>
-                                                                                            <div
-                                                                                                class="item--position">
-                                                                                                Farmer</div>
-                                                                                            <div
-                                                                                                class="item--image-fixed">
-                                                                                                <img width="95"
-                                                                                                    height="90"
-                                                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/team-leaf.png"
-                                                                                                    class="attachment-full"
-                                                                                                    alt="" /><img
-                                                                                                    width="95"
-                                                                                                    height="90"
-                                                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/team-leaf.png"
-                                                                                                    class="attachment-full"
-                                                                                                    alt="" />
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="item--description">
-                                                                                            Lisa focuses on
-                                                                                            providing customers
-                                                                                            with Organic and
-                                                                                            Fair Trade Food.
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="item--social">
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-facebook-f"></i></a>
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-twitter"></i></a>
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-dribbble"></i></a>
-                                                                                            <a href=""><i
-                                                                                                    class="fab fa-behance"></i></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="slick-slide">
-                                                                                <div class="item--inner ">
-                                                                                    <div
-                                                                                        class="item--image">
-                                                                                        <img class="no-lazyload "
-                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/author5-176x176.jpg"
-                                                                                            width="176"
-                                                                                            height="176"
-                                                                                            alt="author5"
-                                                                                            title="author5" />
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="item--holder">
-                                                                                        <div
-                                                                                            class="item--meta">
-                                                                                            <h3
-                                                                                                class="item--title">
-                                                                                                Sinira Fro</h3>
-                                                                                            <div
-                                                                                                class="item--position">
-                                                                                                Farmer</div>
-                                                                                            <div
-                                                                                                class="item--image-fixed">
-                                                                                                <img width="95"
-                                                                                                    height="90"
-                                                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/team-leaf.png"
-                                                                                                    class="attachment-full"
-                                                                                                    alt="" /><img
-                                                                                                    width="95"
-                                                                                                    height="90"
-                                                                                                    src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/team-leaf.png"
-                                                                                                    class="attachment-full"
-                                                                                                    alt="" />
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="item--description">
-                                                                                            Lisa focuses on
-                                                                                            providing customers
-                                                                                            with Organic and
-                                                                                            Fair Trade Food.
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="item--social">
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-facebook-f"></i></a>
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-twitter"></i></a>
-                                                                                            <a href="#"><i
-                                                                                                    class="fab fa-dribbble"></i></a>
-                                                                                            <a href=""><i
-                                                                                                    class="fab fa-behance"></i></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -3600,50 +3148,35 @@
                                                                                     <div
                                                                                         class="item--sub-title style-default">
                                                                                         <span> <span>~</span>
-                                                                                            From our blog
+                                                                                            Nos article depuis notre blog
                                                                                             <span>~</span>
                                                                                         </span></div>
                                                                                     <h3 class="item--title case-animate-time st-default "
                                                                                         data-wow-delay="ms">
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">On</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">Voir</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">a</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">un</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">quest</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">peu</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">to</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">plus</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">bring</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">de</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">together</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">nos</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">and</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">article</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">closer</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">to</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">you</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">all</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">things</span></span>
-                                                                                        <span
-                                                                                            class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">Organic.</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">ensemble</span></span>
                                                                                     </h3>
                                                                                 </div>
                                                                             </div>
@@ -4079,8 +3612,7 @@
                                                                             <i aria-hidden="true"
                                                                                 class="flaticon flaticon-next"></i>
                                                                         </span> <span
-                                                                            class="ct-button-text">View all
-                                                                            posts </span> </a>
+                                                                            class="ct-button-text">Tout voir dans notre blog </span> </a>
                                                                 </div>
                                                             </div>
                                                         </div>

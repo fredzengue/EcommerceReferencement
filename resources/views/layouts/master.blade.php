@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="Pkz_40iX2mhipnf0fKOAaNDFY0JivhzL91-3Tx5pGBo" />
     <link rel="profile" href="//gmpg.org/xfn/11">
     <title>Organico || @yield('page_title')</title>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -3326,7 +3325,7 @@
         href='https://demo.casethemes.net/organio/wp-content/plugins/woo-variation-swatches/assets/css/frontend-tooltip.min.css?ver=1.1.19'
         type='text/css' media='all' />
     <script type="text/template" id="tmpl-variation-template">
-        <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability">data.variation.availability_html </div> 
+        <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability">data.variation.availability_html </div>
     </script>
     <script type="text/template" id="tmpl-unavailable-variation-template">
         <p>Sorry, this product is unavailable. Please choose a different combination.</p> </script>
@@ -3374,7 +3373,7 @@
         content="Powered by Slider Revolution 6.2.22 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
     <script type="text/javascript">
         function setREVStartSize(e) {
-            //window.requestAnimationFrame(function() { 
+            //window.requestAnimationFrame(function() {
             window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
             window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
             try {
@@ -3699,18 +3698,18 @@
                         <div class="row">
                             <div class="ct-header-branding">
                                 <div class="ct-header-branding-inner"> <a class="logo-dark"
-                                        href="https://demo.casethemes.net/organio/" title="Organio" rel="home"><img
+                                        href="/" title="Organio" rel="home"><img
                                             src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/logo-dark.png"
                                             alt="Organio" /></a><a class="logo-light"
-                                        href="https://demo.casethemes.net/organio/" title="Organio" rel="home"><img
+                                        href="/" title="Organio" rel="home"><img
                                             src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/logo-light.png"
                                             alt="Organio" /></a><a class="logo-mobile"
-                                        href="https://demo.casethemes.net/organio/" title="Organio" rel="home"><img
+                                        href="/" title="Organio" rel="home"><img
                                             src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/logo-mobile.png"
                                             alt="Organio" /></a></div>
                             </div>
                             <div class="ct-header-product-search">
-                                <form action="https://demo.casethemes.net/organio/" class="product-searchform"
+                                <form action="#" class="product-searchform"
                                     method="get">
                                     <div class="product-search-category"> <select name="product_cat">
                                             <option value="">Sélectionner catégorie</option>
@@ -3788,11 +3787,11 @@
                                                         </li>
                                                         @endforeach
                                                     </ul>
-                                                </li> 
+                                                </li>
                                                 @else
                                                 <li id="menu-item-2278"
                                                 class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2278">
-                                                <a href="https://demo.casethemes.net/organio/product-category/grocery-frozen/">
+                                                <a href="{{route('product.index', $category->id)}}">
                                                     <span class="link-icon left-icon">
                                                         <i class="flaticon-cardboard"></i>
                                                     </span>
@@ -3801,7 +3800,7 @@
                                                 </a>
                                                 </li>
                                                 @endif
-                                                
+
                                                 @endforeach
                                             </ul>
                                         </li>
@@ -3870,8 +3869,8 @@
                                                                                             <div lass="ct-menu-item-wrap  style1">
                                                                                                 <ul class="ct-menu-item ">
                                                                                                     @foreach ($country->categories as $category)
-                                                                                                    <li> 
-                                                                                                        <a href="">
+                                                                                                    <li>
+                                                                                                        <a href="{{route('product.index', $category->id)}}">
                                                                                                             <span>{{$category->name}}</span>
                                                                                                         </a>
                                                                                                     </li>
@@ -3900,7 +3899,7 @@
                                             <li id="menu-item-22"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
                                                 <a
-                                                    href="/about"><span>A propos</span></a>
+                                                    href="/about-us"><span>A propos</span></a>
                                             </li>
                                             <li id="menu-item-22"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
@@ -4193,7 +4192,7 @@
                                                                                         <li id="menu-item-979"
                                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-979">
                                                                                             <a
-                                                                                                href="about/"><span>A propos de nous</span></a>
+                                                                                                href="/about-us/"><span>A propos de nous</span></a>
                                                                                         </li>
                                                                                     </ul>
                                                                                 </div>
@@ -4241,7 +4240,7 @@
                                                                                         class="ct-contact-content"> 3
                                                                                         rue de la justice,
                                                                                         95000 Cergy </span></li>
-                                                                                
+
                                                                                 <li> <span class="ct-contact-icon"> <i
                                                                                             aria-hidden="true"
                                                                                             class="fas fa-phone-alt"></i>
