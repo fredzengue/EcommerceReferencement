@@ -36,3 +36,6 @@ Route::get('/about-us', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+// <img  width="664" height="443" class="initial lzld--loading" data-was-processed="true">
