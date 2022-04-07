@@ -9,11 +9,11 @@ class Category extends Model
 {
     public function countries()
     {
-        return $this->belongsToMany('App\models\Country');
+        return $this->belongsToMany('App\models\country');
     }
     public function subcategories()
     {
-        return $this->hasMany('App\models\Subcategory');
+        return $this->hasMany('App\models\subcategory');
     }
 
 }
