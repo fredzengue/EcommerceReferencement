@@ -25,7 +25,7 @@ Route::get('/contact', function () {
     return view('contact');
 });
 Route::get('/blog', function () {
-    return view('blog.index');
+    return view('blog.inde');
 });
 Route::get('/about-us', function () {
     return view('about-us');
