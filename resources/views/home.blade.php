@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 @section('page_title', 'Accueil')
 @section('content')
 <div id="content" class="site-content">
@@ -55,9 +55,9 @@
                                                                                             data-frame_1_mask="u:t;"
                                                                                             data-frame_999="o:0;st:w;sR:7100;"
                                                                                             style="z-index:9;font-family:Lora;">
-                                                                                            Choose the<br />
-                                                                                            best healthier<br />
-                                                                                            way of life.
+                                                                                            Choisissez les <br />
+                                                                                            meilleurs aliments<br />
+                                                                                            pour votre santé.
                                                                                         </rs-layer>
                                                                                         <!-- -->
                                                                                         <rs-layer
@@ -74,8 +74,7 @@
                                                                                             data-frame_1_mask="u:t;"
                                                                                             data-frame_999="o:0;st:w;sR:6800;"
                                                                                             style="z-index:10;font-family:Barlow;">
-                                                                                            Leading Brand for
-                                                                                            Organic Food
+                                                                                            Organico est la pour vous
                                                                                         </rs-layer>
                                                                                         <!-- --><a id="slider-1-slide-1-layer-6" class="rs-layer" href="https://demo.casethemes.net/organio/shop/"
                                                                                             target="_self"
@@ -91,8 +90,7 @@
                                                                                             data-frame_1_mask="u:t;"
                                                                                             data-frame_999="o:0;st:w;sR:6500;"
                                                                                             style="z-index:11;font-family:Roboto;"><span
-                                                                                                class="btn btn-slider1">Shop
-                                                                                                now<i
+                                                                                                class="btn btn-slider1">Acheter Maintenant<i
                                                                                                     class="flaticon-next"></i></span>
                                                                                         </a>
                                                                                         <!--  -->
@@ -331,9 +329,9 @@
                                                                                             data-frame_1_mask="u:t;"
                                                                                             data-frame_999="o:0;st:w;sR:7100;"
                                                                                             style="z-index:9;font-family:Lora;">
-                                                                                            Let’s go back<br />
-                                                                                            to the past<br />
-                                                                                            pure food!
+                                                                                            Revenons aux<br />
+                                                                                            plat 100%<br />
+                                                                                            naturel!
                                                                                         </rs-layer>
                                                                                         <!-- -->
                                                                                         <rs-layer
@@ -350,8 +348,7 @@
                                                                                             data-frame_1_mask="u:t;"
                                                                                             data-frame_999="o:0;st:w;sR:6800;"
                                                                                             style="z-index:10;font-family:Barlow;">
-                                                                                            Leading Brand for
-                                                                                            Organic Food
+                                                                                            Organica est la pour vous
                                                                                         </rs-layer>
                                                                                         <!-- --><a id="slider-1-slide-3-layer-6" class="rs-layer" href="https://demo.casethemes.net/organio/shop/"
                                                                                             target="_self"
@@ -367,8 +364,7 @@
                                                                                             data-frame_1_mask="u:t;"
                                                                                             data-frame_999="o:0;st:w;sR:6500;"
                                                                                             style="z-index:11;font-family:Roboto;"><span
-                                                                                                class="btn btn-slider1 color-preset2">Shop
-                                                                                                now<i
+                                                                                                class="btn btn-slider1 color-preset2">Acheter Maintenant<i
                                                                                                     class="flaticon-next"></i></span>
                                                                                         </a>
                                                                                         <!-- -->
@@ -588,9 +584,9 @@
                                                                                             data-frame_1_mask="u:t;"
                                                                                             data-frame_999="o:0;st:w;sR:7100;"
                                                                                             style="z-index:9;font-family:Lora;">
-                                                                                            Boost your<br />
-                                                                                            mood to take<br />
-                                                                                            organic food.
+                                                                                            Les meilleurs<br />
+                                                                                            plats <br />
+                                                                                            africain.
                                                                                         </rs-layer>
                                                                                         <!-- -->
                                                                                         <rs-layer
@@ -607,8 +603,7 @@
                                                                                             data-frame_1_mask="u:t;"
                                                                                             data-frame_999="o:0;st:w;sR:6800;"
                                                                                             style="z-index:10;font-family:Barlow;">
-                                                                                            Leading Brand for
-                                                                                            Organic Food
+                                                                                            Organica est la pour vous
                                                                                         </rs-layer>
                                                                                         <!-- --><a id="slider-1-slide-4-layer-6" class="rs-layer" href="https://demo.casethemes.net/organio/shop/"
                                                                                             target="_self"
@@ -624,8 +619,7 @@
                                                                                             data-frame_1_mask="u:t;"
                                                                                             data-frame_999="o:0;st:w;sR:6500;"
                                                                                             style="z-index:11;font-family:Roboto;"><span
-                                                                                                class="btn btn-slider1 color-preset3">Shop
-                                                                                                now<i
+                                                                                                class="btn btn-slider1 color-preset3">Acheter Maintenant<i
                                                                                                     class="flaticon-next"></i></span>
                                                                                         </a>
                                                                                         <!-- -->
@@ -964,15 +958,18 @@
                                                                     </div>
                                                                     <div class="item--holder">
                                                                         <h4 class="item--title wow fadeInUp"
-                                                                            data-wow-delay="50ms"> Avoir 10% de réductions</h4>
-                                                                        <div class="item--description wow fadeInUp"
-                                                                            data-wow-delay="ms">Achetez nos produits
+                                                                            data-wow-delay="50ms">
+                                                                            Achetez nos produits
                                                                             vegetales à un prix abordable.
-                                                                            10% de reduction pour tous nos produits vegetales.</div> <a
+                                                                            </h4>
+                                                                        <div class="item--description wow fadeInUp"
+                                                                            data-wow-delay="ms">
+                                                                            Nous avons 10% de reduction pour tous nos produits vegetales
+                                                                        </div> <a
                                                                             class="btn item--button-outline wow fadeInUp"
                                                                             data-wow-delay="150ms"
                                                                             href="https://demo.casethemes.net/organio/shop/">
-                                                                            Shop now <i
+                                                                            Acheter Maintenant<i
                                                                                 class="flaticon-next"></i>
                                                                         </a>
                                                                     </div>
@@ -1003,17 +1000,15 @@
                                                                     </div>
                                                                     <div class="item--holder">
                                                                         <h4 class="item--title wow fadeInUp"
-                                                                            data-wow-delay="50ms"> Get garden
-                                                                            fresh fruits</h4>
+                                                                            data-wow-delay="50ms"> Obtenez des fruits frais du jardin</h4>
                                                                         <div class="item--description wow fadeInUp"
-                                                                            data-wow-delay="ms">Shop our
-                                                                            selection of organic fresh
-                                                                            vegetables in a discounted price.
-                                                                            10% off on all vegetables.</div> <a
+                                                                            data-wow-delay="ms">Achetez notre sélection de légumes
+                                                                            frais biologiques à prix réduit.
+                                                                            10% de réduction sur tous les légumes.</div> <a
                                                                             class="btn item--button-default wow fadeInUp"
                                                                             data-wow-delay="150ms"
                                                                             href="https://demo.casethemes.net/organio/shop/">
-                                                                            Shop now <i
+                                                                            Acheter Maintenant<i
                                                                                 class="flaticon-next"></i>
                                                                         </a>
                                                                     </div>
@@ -1253,25 +1248,25 @@
                                                                                         data-wow-delay="ms">
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">We</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">Nous</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">believe</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">croyons</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">in</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">dans</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">working</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">le </span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">with</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">travail</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">accredited</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">de nos</span></span>
                                                                                         <span
                                                                                             class="slide-in-container"><span
-                                                                                                class="d-inline-block wow case-fade-in-up">farmers</span></span>
+                                                                                                class="d-inline-block wow case-fade-in-up">agriculteur africain</span></span>
                                                                                     </h3>
                                                                                 </div>
                                                                             </div>
@@ -1321,20 +1316,19 @@
                                                                                         class="item--meta">
                                                                                         <h4 class="item--title "
                                                                                             data-wow-delay="ms">
-                                                                                            Vegetables</h4>
+                                                                                            Légumes </h4>
                                                                                         <div class="item--description "
                                                                                             data-wow-delay="ms">
-                                                                                            Purchasing from
-                                                                                            select family
-                                                                                            farmers who farm
-                                                                                            organically.</div>
+                                                                                            Nous vous proposons la vente de
+                                                                                            légumes savoureux et gourmands
+                                                                                            tout au long de l'année</div>
                                                                                         <div
                                                                                             class="item--readmore">
                                                                                             <a class="btn-icon-animate"
                                                                                                 href="https://demo.casethemes.net/organio/product-category/organic/">
                                                                                                 <i
                                                                                                     class="ct-icon-frist flaticon-next"></i>
-                                                                                                Shop now <i
+                                                                                                Acheter Maintenant<i
                                                                                                     class="ct-icon-last flaticon-next"></i>
                                                                                             </a></div>
                                                                                     </div>
@@ -1361,20 +1355,17 @@
                                                                                         class="item--meta">
                                                                                         <h4 class="item--title "
                                                                                             data-wow-delay="ms">
-                                                                                            Fresh Fruits</h4>
+                                                                                            Fruits Frais </h4>
                                                                                         <div class="item--description "
                                                                                             data-wow-delay="ms">
-                                                                                            Purchasing from
-                                                                                            select family
-                                                                                            farmers who farm
-                                                                                            organically.</div>
+                                                                                            ici retrouvez une large sélection de fruits venant d'afrique</div>
                                                                                         <div
                                                                                             class="item--readmore">
                                                                                             <a class="btn-icon-animate"
                                                                                                 href="https://demo.casethemes.net/organio/product-category/organic/">
                                                                                                 <i
                                                                                                     class="ct-icon-frist flaticon-next"></i>
-                                                                                                Shop now <i
+                                                                                                Acheter Maintenant<i
                                                                                                     class="ct-icon-last flaticon-next"></i>
                                                                                             </a></div>
                                                                                     </div>
@@ -1401,21 +1392,18 @@
                                                                                         class="item--meta">
                                                                                         <h4 class="item--title "
                                                                                             data-wow-delay="ms">
-                                                                                            Nuts &amp; dried
-                                                                                            food</h4>
+                                                                                            Fruits secs</h4>
                                                                                         <div class="item--description "
                                                                                             data-wow-delay="ms">
-                                                                                            Purchasing from
-                                                                                            select family
-                                                                                            farmers who farm
-                                                                                            organically.</div>
+                                                                                            pour tout achat de fruits séchés
+                                                                                            venant d'afrique pas cher et bien c'est bien ici !!!</div>
                                                                                         <div
                                                                                             class="item--readmore">
                                                                                             <a class="btn-icon-animate"
                                                                                                 href="https://demo.casethemes.net/organio/product-category/organic/">
                                                                                                 <i
                                                                                                     class="ct-icon-frist flaticon-next"></i>
-                                                                                                Shop now <i
+                                                                                                Acheter Maintenant<i
                                                                                                     class="ct-icon-last flaticon-next"></i>
                                                                                             </a></div>
                                                                                     </div>
@@ -1442,20 +1430,18 @@
                                                                                         class="item--meta">
                                                                                         <h4 class="item--title "
                                                                                             data-wow-delay="ms">
-                                                                                            Spices</h4>
+                                                                                            épices</h4>
                                                                                         <div class="item--description "
                                                                                             data-wow-delay="ms">
-                                                                                            Purchasing from
-                                                                                            select family
-                                                                                            farmers who farm
-                                                                                            organically.</div>
+                                                                                            Notre sélection d'épices en graines ou en poudre
+                                                                                            aromatiques va vous faciliter la cuisine. A vos épices , prêts, cuisinez !!</div>
                                                                                         <div
                                                                                             class="item--readmore">
                                                                                             <a class="btn-icon-animate"
                                                                                                 href="https://demo.casethemes.net/organio/product-category/organic/">
                                                                                                 <i
                                                                                                     class="ct-icon-frist flaticon-next"></i>
-                                                                                                Shop now <i
+                                                                                                Acheter Maintenant<i
                                                                                                     class="ct-icon-last flaticon-next"></i>
                                                                                             </a></div>
                                                                                     </div>
@@ -1492,7 +1478,7 @@
                                                                                                 href="https://demo.casethemes.net/organio/product-category/organic/">
                                                                                                 <i
                                                                                                     class="ct-icon-frist flaticon-next"></i>
-                                                                                                Shop now <i
+                                                                                                Acheter Maintenant<i
                                                                                                     class="ct-icon-last flaticon-next"></i>
                                                                                             </a></div>
                                                                                     </div>
@@ -1532,7 +1518,7 @@
                                                                                                 href="https://demo.casethemes.net/organio/product-category/organic/">
                                                                                                 <i
                                                                                                     class="ct-icon-frist flaticon-next"></i>
-                                                                                                Shop now <i
+                                                                                                Acheter Maintenant<i
                                                                                                     class="ct-icon-last flaticon-next"></i>
                                                                                             </a></div>
                                                                                     </div>
@@ -1573,7 +1559,7 @@
                                                                                                 href="https://demo.casethemes.net/organio/product-category/organic/">
                                                                                                 <i
                                                                                                     class="ct-icon-frist flaticon-next"></i>
-                                                                                                Shop now <i
+                                                                                                Acheter Maintenant<i
                                                                                                     class="ct-icon-last flaticon-next"></i>
                                                                                             </a></div>
                                                                                     </div>
@@ -1613,7 +1599,7 @@
                                                                                                 href="https://demo.casethemes.net/organio/product-category/organic/">
                                                                                                 <i
                                                                                                     class="ct-icon-frist flaticon-next"></i>
-                                                                                                Shop now <i
+                                                                                                Acheter Maintenant<i
                                                                                                     class="ct-icon-last flaticon-next"></i>
                                                                                             </a></div>
                                                                                     </div>

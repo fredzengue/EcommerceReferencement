@@ -1,665 +1,14 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="profile" href="//gmpg.org/xfn/11">
-    <title>Africa market || @yield('page_title')</title>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <title>Organico || @yield('page_title')</title>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <style type="text/css">
-        @font-face {
-            font-family: 'Architects Daughter';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/architectsdaughter/v17/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg5g.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Barlow';
-            font-style: italic;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/barlow/v11/7cHrv4kjgoGqM7E_Cfs7wHo.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Barlow';
-            font-style: italic;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/barlow/v11/7cHsv4kjgoGqM7E_CfPI42ouvT8.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Barlow';
-            font-style: italic;
-            font-weight: 600;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/barlow/v11/7cHsv4kjgoGqM7E_CfPk5GouvT8.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Barlow';
-            font-style: italic;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/barlow/v11/7cHsv4kjgoGqM7E_CfOA5WouvT8.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Barlow';
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/barlow/v11/7cHqv4kjgoGqM7E3p-ks51op.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Barlow';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/barlow/v11/7cHpv4kjgoGqM7E_DMs8.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Barlow';
-            font-style: normal;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/barlow/v11/7cHqv4kjgoGqM7E3_-gs51op.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Barlow';
-            font-style: normal;
-            font-weight: 600;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/barlow/v11/7cHqv4kjgoGqM7E30-8s51op.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Barlow';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/barlow/v11/7cHqv4kjgoGqM7E3t-4s51op.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: italic;
-            font-weight: 100;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9A4kDNxMZdWfMOD5VvkrCqUTDfdA.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: italic;
-            font-weight: 200;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9f4kDNxMZdWfMOD5VvkrAGQCf4VFw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: italic;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9f4kDNxMZdWfMOD5VvkrBiQyf4VFw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: italic;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9C4kDNxMZdWfMOD5VvkrjJYTc.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: italic;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9f4kDNxMZdWfMOD5VvkrA6Qif4VFw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: italic;
-            font-weight: 600;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9f4kDNxMZdWfMOD5VvkrAWRSf4VFw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: italic;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9f4kDNxMZdWfMOD5VvkrByRCf4VFw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: italic;
-            font-weight: 800;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9f4kDNxMZdWfMOD5VvkrBuRyf4VFw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: italic;
-            font-weight: 900;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9f4kDNxMZdWfMOD5VvkrBKRif4VFw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 100;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9C4kDNxMZdWfMOD5Vn9LjJYTc.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 200;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9B4kDNxMZdWfMOD5VnWKneRhf_.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9B4kDNxMZdWfMOD5VnPKreRhf_.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9E4kDNxMZdWfMOD5Vvl4jO.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9B4kDNxMZdWfMOD5VnZKveRhf_.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 600;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9B4kDNxMZdWfMOD5VnSKzeRhf_.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9B4kDNxMZdWfMOD5VnLK3eRhf_.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 800;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9B4kDNxMZdWfMOD5VnMK7eRhf_.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 900;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/firasans/v15/va9B4kDNxMZdWfMOD5VnFK_eRhf_.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lexend/v14/wlptgwvFAVdoq2_F94zlCfv0bz1WCzsWzLdnfw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lexend/v14/wlptgwvFAVdoq2_F94zlCfv0bz1WCwkWzLdnfw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 600;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lexend/v14/wlptgwvFAVdoq2_F94zlCfv0bz1WC-URzLdnfw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lexend/v14/wlptgwvFAVdoq2_F94zlCfv0bz1WC9wRzLdnfw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Lora';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lora/v23/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Lora';
-            font-style: normal;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lora/v23/0QI6MX1D_JOuGQbT0gvTJPa787wsuxJBkqg.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Lora';
-            font-style: normal;
-            font-weight: 600;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lora/v23/0QI6MX1D_JOuGQbT0gvTJPa787zAvBJBkqg.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Lora';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/lora/v23/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJBkqg.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Playfair Display';
-            font-style: italic;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXtHA_A.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Playfair Display';
-            font-style: italic;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UXtHA_A.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Playfair Display';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtY.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Playfair Display';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiunDXbtY.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Playfair Display';
-            font-style: normal;
-            font-weight: 800;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtY.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Playfair Display';
-            font-style: normal;
-            font-weight: 900;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsunDXbtY.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: italic;
-            font-weight: 100;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiAyp8kv8JHgFVrJJLmE0tCMPc.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: italic;
-            font-weight: 200;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiDyp8kv8JHgFVrJJLmv1pVF9eL.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: italic;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiDyp8kv8JHgFVrJJLm21lVF9eL.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: italic;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiGyp8kv8JHgFVrJJLucHtF.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: italic;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiDyp8kv8JHgFVrJJLmg1hVF9eL.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: italic;
-            font-weight: 600;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiDyp8kv8JHgFVrJJLmr19VF9eL.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: italic;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiDyp8kv8JHgFVrJJLmy15VF9eL.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: italic;
-            font-weight: 800;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiDyp8kv8JHgFVrJJLm111VF9eL.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: italic;
-            font-weight: 900;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiDyp8kv8JHgFVrJJLm81xVF9eL.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 100;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiGyp8kv8JHgFVrLPTucHtF.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 200;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLFj_Z1xlEA.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLEj6Z1xlEA.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 800;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLDD4Z1xlEA.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 900;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLBT5Z1xlEA.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: italic;
-            font-weight: 100;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOiCnqEu92Fr1Mu51QrEzAdKg.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: italic;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: italic;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: italic;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOjCnqEu92Fr1Mu51S7ACc6CsE.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: italic;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOjCnqEu92Fr1Mu51TzBic6CsE.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: italic;
-            font-weight: 900;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOjCnqEu92Fr1Mu51TLBCc6CsE.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 100;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 900;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmYUtfBBc9.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto Slab';
-            font-style: normal;
-            font-weight: 100;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/robotoslab/v22/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto Slab';
-            font-style: normal;
-            font-weight: 200;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/robotoslab/v22/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto Slab';
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/robotoslab/v22/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto Slab';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/robotoslab/v22/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto Slab';
-            font-style: normal;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/robotoslab/v22/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto Slab';
-            font-style: normal;
-            font-weight: 600;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/robotoslab/v22/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto Slab';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/robotoslab/v22/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto Slab';
-            font-style: normal;
-            font-weight: 800;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/robotoslab/v22/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Roboto Slab';
-            font-style: normal;
-            font-weight: 900;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/robotoslab/v22/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf) format('truetype');
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/app.css">
     <meta name='robots' content='max-image-preview:large' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
@@ -667,6 +16,8 @@
         href="https://demo.casethemes.net/organio/feed/" />
     <link rel="alternate" type="application/rss+xml" title="Organio &raquo; Comments Feed"
         href="https://demo.casethemes.net/organio/comments/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Organio &raquo; Products Feed"
+        href="https://demo.casethemes.net/organio/shop/feed/" />
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/",
@@ -674,7 +25,7 @@
             "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/",
             "svgExt": ".svg",
             "source": {
-                "concatemoji": "https:\/\/demo.casethemes.net\/organio\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.2"
+                "concatemoji": "https:\/\/demo.casethemes.net\/organio\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.3"
             }
         };
         /*! This file is auto-generated */
@@ -737,14 +88,13 @@
             vertical-align: -0.1em !important;
             background: none !important;
             padding: 0 !important;
-        }
 
     </style>
     <link rel='stylesheet' id='sbi_styles-css'
         href='https://demo.casethemes.net/organio/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.0.4'
         type='text/css' media='all' />
     <link rel='stylesheet' id='wp-block-library-css'
-        href='https://demo.casethemes.net/organio/wp-includes/css/dist/block-library/style.min.css?ver=5.9.2'
+        href='https://demo.casethemes.net/organio/wp-includes/css/dist/block-library/style.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='wc-blocks-vendors-style-css'
         href='https://demo.casethemes.net/organio/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.min.css?ver=6.7.3'
@@ -3846,10 +3196,10 @@
         href='https://demo.casethemes.net/organio/wp-content/plugins/case-theme-core/assets/plugin/font-awesome/css/font-awesome.min.css?ver=4.7.0'
         type='text/css' media='all' />
     <link rel='stylesheet' id='remodal-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/case-theme-user/acess/css/remodal.min.css?ver=5.9.2'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/case-theme-user/acess/css/remodal.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='remodal-default-theme-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/case-theme-user/acess/css/remodal-default-theme.min.css?ver=5.9.2'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/case-theme-user/acess/css/remodal-default-theme.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='contact-form-7-css'
         href='https://demo.casethemes.net/organio/wp-content/plugins/contact-form-7/includes/css/contact-form-7.min.css?ver=5.5.6'
@@ -3883,34 +3233,34 @@
         href='https://demo.casethemes.net/organio/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css?ver=3.2.8'
         type='text/css' media='all' />
     <link rel='stylesheet' id='ppress-select2-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=5.9.2'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='hint-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-compare/assets/libs/hint/hint.min.css?ver=5.9.2'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-compare/assets/libs/hint/hint.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='perfect-scrollbar-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-compare/assets/libs/perfect-scrollbar/css/perfect-scrollbar.min.css?ver=5.9.2'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-compare/assets/libs/perfect-scrollbar/css/perfect-scrollbar.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='perfect-scrollbar-wpc-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-compare/assets/libs/perfect-scrollbar/css/perfect-scrollbar-wpc.min.css?ver=5.9.2'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-compare/assets/libs/perfect-scrollbar/css/perfect-scrollbar-wpc.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='woosc-frontend-css'
         href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-compare/assets/css/woosc-frontend.min.css?ver=4.2.6'
         type='text/css' media='all' />
     <link rel='stylesheet' id='slick-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-quick-view/assets/libs/slick/slick.min.css?ver=5.9.2'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-quick-view/assets/libs/slick/slick.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='magnific-popup-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-quick-view/assets/libs/magnific-popup/magnific-popup.min.css?ver=5.9.2'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-quick-view/assets/libs/magnific-popup/magnific-popup.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='woosq-feather-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-quick-view/assets/libs/feather/woosq-feather.min.css?ver=5.9.2'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-quick-view/assets/libs/feather/woosq-feather.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='woosq-frontend-css'
         href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-quick-view/assets/css/woosq-frontend.min.css?ver=2.8.4'
         type='text/css' media='all' />
     <link rel='stylesheet' id='woosw-feather-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-wishlist/assets/libs/feather/woosw-feather.min.css?ver=5.9.2'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-wishlist/assets/libs/feather/woosw-feather.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='woosw-frontend-css'
         href='https://demo.casethemes.net/organio/wp-content/plugins/woo-smart-wishlist/assets/css/woosw-frontend.min.css?ver=2.9.6'
@@ -3948,22 +3298,7 @@
 
     </style>
     <link rel='stylesheet' id='organio-style-css'
-        href='https://demo.casethemes.net/organio/wp-content/themes/orgio/organio-style.min.css?ver=5.9.2'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='elementor-icons-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.14.0'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='elementor-frontend-css'
-        href='https://demo.casethemes.net/organio/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.5.6'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='elementor-post-12-css'
-        href='https://demo.casethemes.net/organio/wp-content/uploads/elementor/css/post-12.css?ver=1648277083'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='elementor-global-css'
-        href='https://demo.casethemes.net/organio/wp-content/uploads/elementor/css/global.css?ver=1648277083'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='elementor-post-14-css'
-        href='https://demo.casethemes.net/organio/wp-content/uploads/elementor/css/post-14.css?ver=1648277084'
+        href='https://demo.casethemes.net/organio/wp-content/themes/orgio/organio-style.min.css?ver=5.9.3'
         type='text/css' media='all' />
     <link rel='stylesheet' id='woo-variation-swatches-css'
         href='https://demo.casethemes.net/organio/wp-content/plugins/woo-variation-swatches/assets/css/frontend.min.css?ver=1.1.19'
@@ -3990,8 +3325,8 @@
         href='https://demo.casethemes.net/organio/wp-content/plugins/woo-variation-swatches/assets/css/frontend-tooltip.min.css?ver=1.1.19'
         type='text/css' media='all' />
     <script type="text/template" id="tmpl-variation-template">
-        <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability"> data.variation.availability_html</div> 
-                </script>
+        <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability">data.variation.availability_html </div> 
+    </script>
     <script type="text/template" id="tmpl-unavailable-variation-template">
         <p>Sorry, this product is unavailable. Please choose a different combination.</p> </script>
     <script type='text/javascript' src='https://demo.casethemes.net/organio/wp-includes/js/jquery/jquery.min.js?ver=3.6.0'
@@ -4009,28 +3344,21 @@
         src='https://demo.casethemes.net/organio/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.22'
         id='revmin-js'></script>
     <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=5.9.2'
+        src='https://demo.casethemes.net/organio/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=5.9.3'
         id='ppress-flatpickr-js'></script>
     <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=5.9.2'
+        src='https://demo.casethemes.net/organio/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=5.9.3'
         id='ppress-select2-js'></script>
     <script type='text/javascript'
         src='https://demo.casethemes.net/organio/wp-content/uploads/siteground-optimizer-assets/ct-inline-css-js.min.js?ver=1.5.0'
         id='ct-inline-css-js-js'></script>
     <link rel="https://api.w.org/" href="https://demo.casethemes.net/organio/wp-json/" />
-    <link rel="alternate" type="application/json" href="https://demo.casethemes.net/organio/wp-json/wp/v2/pages/14" />
     <link rel="EditURI" type="application/rsd+xml" title="RSD"
         href="https://demo.casethemes.net/organio/xmlrpc.php?rsd" />
     <link rel="wlwmanifest" type="application/wlwmanifest+xml"
         href="https://demo.casethemes.net/organio/wp-includes/wlwmanifest.xml" />
-    <meta name="generator" content="WordPress 5.9.2" />
+    <meta name="generator" content="WordPress 5.9.3" />
     <meta name="generator" content="WooCommerce 6.2.1" />
-    <link rel="canonical" href="https://demo.casethemes.net/organio/" />
-    <link rel='shortlink' href='https://demo.casethemes.net/organio/' />
-    <link rel="alternate" type="application/json+oembed"
-        href="https://demo.casethemes.net/organio/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.casethemes.net%2Forganio%2F" />
-    <link rel="alternate" type="text/xml+oembed"
-        href="https://demo.casethemes.net/organio/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.casethemes.net%2Forganio%2F&#038;format=xml" />
     <meta name="generator" content="Redux 4.3.11" />
     <link rel="icon" type="image/png"
         href="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/favicon.png" /> <noscript>
@@ -4046,65 +3374,6 @@
     <script type="text/javascript">
         function setREVStartSize(e) {
             //window.requestAnimationFrame(function() { 
-            window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
-            window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
-            try {
-                var pw =         <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability"> data.variation.availability_html</div>
-        </script>
-    <script type="text/template" id="tmpl-unavailable-variation-template">
-        <p>Sorry, this product is unavailable. Please choose a different combination.</p> </script>
-    <script type='text/javascript' src='https://demo.casethemes.net/organio/wp-includes/js/jquery/jquery.min.js?ver=3.6.0'
-        id='jquery-core-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2'
-        id='jquery-migrate-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/uploads/siteground-optimizer-assets/ct-main-js.min.js?ver=1.0.0'
-        id='ct-main-js-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.2.22'
-        id='tp-tools-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.22'
-        id='revmin-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=5.9.2'
-        id='ppress-flatpickr-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=5.9.2'
-        id='ppress-select2-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/uploads/siteground-optimizer-assets/ct-inline-css-js.min.js?ver=1.5.0'
-        id='ct-inline-css-js-js'></script>
-    <link rel="https://api.w.org/" href="https://demo.casethemes.net/organio/wp-json/" />
-    <link rel="alternate" type="application/json" href="https://demo.casethemes.net/organio/wp-json/wp/v2/pages/14" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD"
-        href="https://demo.casethemes.net/organio/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
-        href="https://demo.casethemes.net/organio/wp-includes/wlwmanifest.xml" />
-    <meta name="generator" content="WordPress 5.9.2" />
-    <meta name="generator" content="WooCommerce 6.2.1" />
-    <link rel="canonical" href="https://demo.casethemes.net/organio/" />
-    <link rel='shortlink' href='https://demo.casethemes.net/organio/' />
-    <link rel="alternate" type="application/json+oembed"
-        href="https://demo.casethemes.net/organio/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.casethemes.net%2Forganio%2F" />
-    <link rel="alternate" type="text/xml+oembed"
-        href="https://demo.casethemes.net/organio/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.casethemes.net%2Forganio%2F&#038;format=xml" />
-    <meta name="generator" content="Redux 4.3.11" />
-    <link rel="icon" type="image/png"
-        href="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/favicon.png" /> <noscript>
-        <style>
-            .woocommerce-product-gallery {
-                opacity: 1 !important;
-            }
-
-        </style>
-    </noscript>
-    <meta name="generator"
-        content="Powered by Slider Revolution 6.2.22 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-    <script type="text/javascript">
-        function setREVStartSize(e) {
-            //window.requestAnimationFrame(function() {
             window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
             window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
             try {
@@ -4234,17 +3503,10 @@
         }
 
     </style>
-    <style id="ct-page-dynamic-css" data-type="redux-output-css">
-        #content {
-            padding-top: 0px;
-            padding-bottom: 0px;
-        }
-
-    </style>
 </head>
 
 <body
-    class="home page-template-default page page-id-14 theme-orgio woocommerce-no-js woo-variation-swatches woo-variation-swatches-on-mobile wvs-theme-orgio wvs-theme-child-orgio wvs-style-squared wvs-attr-behavior-blur wvs-tooltip wvs-css wvs-show-label redux-page  site-h1 body-default-font heading-default-font header-sticky  site-404-default elementor-default elementor-kit-12 elementor-page elementor-page-14">
+    class="archive post-type-archive post-type-archive-product theme-orgio woocommerce-shop woocommerce woocommerce-page woocommerce-no-js woo-variation-swatches woo-variation-swatches-on-mobile wvs-theme-orgio wvs-theme-child-orgio wvs-style-squared wvs-attr-behavior-blur wvs-tooltip wvs-css wvs-show-label hfeed redux-page  site-h2 body-default-font heading-default-font header-sticky  site-404-default elementor-default elementor-kit-12">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
@@ -4375,454 +3637,65 @@
             </div>
         </div>
         <header id="ct-masthead">
-            <div id="ct-header-wrap" class="ct-header-layout1 item-menu-style1 fixed-height  is-sticky scroll-to-bottom"
+            <div id="ct-header-wrap" class="ct-header-layout2 fixed-height is-sticky scroll-to-bottom"
                 data-offset-sticky="100">
-                <div id="ct-header-top" class="ct-header-top1">
+                <div id="ct-header-top" class="ct-header-top2">
                     <div class="container">
                         <div class="row">
-                            <div class="ct-topbar-wellcome"> Bienvenue sur votre marché de produits alimentaires
-                                africains <span>Organico!</span></div>
-                                @guest
-                                @if (Route::has('login'))
-                                    <a class="nav-link" style="color: #fff" href="{{ route('login') }}">{{ __('Connexion') }}</a>
-                                @endif
-                                @if (Route::has('register'))
-                                        <a class="nav-link" style="color: #fff" href="{{ route('register') }}">{{ __('Inscription') }}</a>
-                                @endif
-                                @else
-                                @endguest
-                            <div class="ct-topbar-cart">
-                                <div class="header-right-item h-btn-cart"> <i class="caseicon-shopping-cart"></i>
-                                    Panier:
-                                    <span class="widget_cart_counter_header">0 - <span class="cart-total"><span
-                                                class="woocommerce-Price-amount amount"><bdi><span
-                                                        class="woocommerce-Price-currencySymbol">&#36;</span>0.00</bdi></span></span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="ct-header" class="ct-header-main">
-                    <div class="container">
-                        <div class="row">
-                            <div class="ct-header-navigation ct-header-navigation-left">
-                                <nav class="ct-main-navigation">
-                                    <div class="ct-main-navigation-inner">
-                                        <ul id="ct-main-menu-left" class="ct-main-menu children-arrow clearfix">
-                                            <li id="menu-item-22"
-                                                class="menu-item current-menu-item current_page_item menu-item-type-post_type menu-item-object-page menu-item-22">
-                                                <a
-                                                    href="/"><span>Accueil</span></a>
-                                            </li>
-                                            <li id="menu-item-25"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page megamenu megamenu-style-alt menu-item-has-children menu-item-25">
-                                                <a
-                                                    href="https://demo.casethemes.net/organio/shop/"><span>Pays</span></a>
-                                                <ul class="sub-menu">
-                                                    <li>
-                                                        <div class="container">
-                                                            <div data-elementor-type="wp-post" data-elementor-id="5090"
-                                                                class="elementor elementor-5090"
-                                                                data-elementor-settings="[]">
-                                                                <div class="elementor-section-wrap">
-                                                                    <section
-                                                                        class="elementor-section elementor-top-section elementor-element elementor-element-2fddfa6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                                        data-id="2fddfa6" data-element_type="section"
-                                                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                                                        <div
-                                                                            class="elementor-container elementor-column-gap-extended ">
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-1fcd143"
-                                                                                data-id="1fcd143"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-54ad0b1 elementor-widget elementor-widget-ct_heading"
-                                                                                        data-id="54ad0b1"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_heading.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-heading h-align- item-st-default">
-                                                                                                <h6 class="item--title case-animate-time st-default wow "
-                                                                                                    data-wow-delay="ms">
-                                                                                                    <span>Cameroun</span>
-                                                                                                </h6>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-1226cea elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="1226cea"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product-grid-2-columns/">
-                                                                                                            <span>Grid 2
-                                                                                                                Columns</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product-grid-3-columns/">
-                                                                                                            <span>Grid 3
-                                                                                                                Columns</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product-grid-4-columns/">
-                                                                                                            <span>Grid 4
-                                                                                                                Columns</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product-grid-4-columns-full-width/">
-                                                                                                            <span>Grid 4
-                                                                                                                Columns
-                                                                                                                Wide</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-bba0642"
-                                                                                data-id="bba0642"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-77a904a elementor-widget elementor-widget-ct_heading"
-                                                                                        data-id="77a904a"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_heading.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-heading h-align- item-st-default">
-                                                                                                <h6 class="item--title case-animate-time st-default wow "
-                                                                                                    data-wow-delay="ms">
-                                                                                                    <span>Côte
-                                                                                                        d'ivoire</span>
-                                                                                                </h6>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-82bcedb elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="82bcedb"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/shop/?sidebar-shop=left">
-                                                                                                            <span>Grid
-                                                                                                                Left
-                                                                                                                Sidebar</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/shop/?sidebar-shop=right">
-                                                                                                            <span>Grid
-                                                                                                                Right
-                                                                                                                Sidebar</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/shop/?shop-layout=list">
-                                                                                                            <span>Product
-                                                                                                                List</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product-masonry/">
-                                                                                                            <span>Product
-                                                                                                                Masonry</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-b607ae7"
-                                                                                data-id="b607ae7"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-9ae596f elementor-widget elementor-widget-ct_heading"
-                                                                                        data-id="9ae596f"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_heading.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-heading h-align- item-st-default">
-                                                                                                <h6 class="item--title case-animate-time st-default wow "
-                                                                                                    data-wow-delay="ms">
-                                                                                                    <span>Sénégal</span>
-                                                                                                </h6>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-4546b12 elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="4546b12"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product/indigi-teas/">
-                                                                                                            <span>Simple</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product/organic-juice/">
-                                                                                                            <span>Variable</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product/raw-cashew-butter/">
-                                                                                                            <span>External</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product/blueberry-cookies/">
-                                                                                                            <span>Grouped</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-1687b2d"
-                                                                                data-id="1687b2d"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-584856a elementor-widget elementor-widget-ct_heading"
-                                                                                        data-id="584856a"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_heading.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-heading h-align- item-st-default">
-                                                                                                <h6 class="item--title case-animate-time st-default wow "
-                                                                                                    data-wow-delay="ms">
-                                                                                                    <span>Maroc</span>
-                                                                                                </h6>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-11cf14d elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="11cf14d"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/sign-in/">
-                                                                                                            <span>My
-                                                                                                                Account</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/cart/">
-                                                                                                            <span>Cart</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/checkout/">
-                                                                                                            <span>Checkout</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/wishlist/">
-                                                                                                            <span>Wishlist</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-1687b2d"
-                                                                                data-id="1687b2d"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-584856a elementor-widget elementor-widget-ct_heading"
-                                                                                        data-id="584856a"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_heading.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-heading h-align- item-st-default">
-                                                                                                <h6 class="item--title case-animate-time st-default wow "
-                                                                                                    data-wow-delay="ms">
-                                                                                                    <span>Nigéria</span>
-                                                                                                </h6>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-11cf14d elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="11cf14d"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/sign-in/">
-                                                                                                            <span>My
-                                                                                                                Account</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/cart/">
-                                                                                                            <span>Cart</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/checkout/">
-                                                                                                            <span>Checkout</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/wishlist/">
-                                                                                                            <span>Wishlist</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-1687b2d"
-                                                                                data-id="1687b2d"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-584856a elementor-widget elementor-widget-ct_heading"
-                                                                                        data-id="584856a"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_heading.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-heading h-align- item-st-default">
-                                                                                                <h6 class="item--title case-animate-time st-default wow "
-                                                                                                    data-wow-delay="ms">
-                                                                                                    <span>Bénin</span>
-                                                                                                </h6>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-11cf14d elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="11cf14d"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/sign-in/">
-                                                                                                            <span>My
-                                                                                                                Account</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/cart/">
-                                                                                                            <span>Cart</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/checkout/">
-                                                                                                            <span>Checkout</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/wishlist/">
-                                                                                                            <span>Wishlist</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-d6f509e"
-                                                                                data-id="d6f509e"
-                                                                                data-element_type="column">
-                                                                                <div class="elementor-widget-wrap">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </section>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li id="menu-item-24"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24">
-                                                <a href="#"><span>Catégories</span></a>
-                                                <ul class="sub-menu">
-                                                    <li id="menu-item-3718"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3718">
-                                                        <a href="#"><span>Epices</span></a>
-                                                    </li>
-                                                    <li id="menu-item-3718"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
-                                                        <a href="#"><span>Fruits</span></a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-3720"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
-                                                                <a href="https://demo.casethemes.net/organio/sign-in/"><span>Fruit secs</span></a>
-                                                            </li>
-                                                            <li id="menu-item-3719"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
-                                                                <a href="https://demo.casethemes.net/organio/sign-up/"><span>Fruits frais</span></a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li id="menu-item-3718"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3718">
-                                                        <a href="#"><span>Légumes</span></a>
-                                                    </li>
-                                                    <li id="menu-item-3718"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
-                                                        <a href="#"><span>Surgelés</span></a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-3718"
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3718">
-                                                                <a href="#"><span>Poisson</span></a>
-                                                                
-                                                            </li>
-                                                            <li id="menu-item-3718"
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3718">
-                                                                <a href="#"><span>Viandes rouges</span></a>
-                                                            </li>
-                                                            <li id="menu-item-3718"
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3718">
-                                                                <a href="#"><span>Viandes blanches</span></a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
+                            <div class="ct-topbar-wellcome"> Bienvenu sur le marché de produits alimentaires africains <span>Organico!</span></div>
+                            <div class="ct-topbar-right">
+                                <div class="site-header-lang custom">
+                                    <div
+                                        class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown">
+                                        <ul>
+                                            <li tabindex="0"
+                                                class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-dropdown">
+                                                <a href="#" class="js-wpml-ls-item-toggle wpml-ls-item-toggle"><img
+                                                        class="wpml-ls-flag"
+                                                        src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/flag/en.png"
+                                                        alt="en" title="English"><span
+                                                        class="wpml-ls-native">Anglais</span></a>
+                                                <ul class="wpml-ls-sub-menu">
+                                                    <li
+                                                        class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-fr">
+                                                        <a href="#" class="wpml-ls-link"><img class="wpml-ls-flag"
+                                                                src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/flag/fr.png"
+                                                                alt="fr" title="France"><span
+                                                                class="wpml-ls-native">Francais</span></a></li>
+                                                    <li
+                                                        class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-de wpml-ls-last-item">
+                                                        <a href="#" class="wpml-ls-link"><img
+                                                            class="wpml-ls-flag"
+                                                            src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/flag/en.png"
+                                                            alt="en" title="English"><span
+                                                            class="wpml-ls-native">Anglais</span></a></li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </div>
-                                </nav>
+                                </div>
+                                <ul id="ct-menu-topbar" class="ct-main-menu children-arrow ct-menu-topbar clearfix">
+                                    @guest
+                                    @if (Route::has('login'))
+                                    <li id="menu-item-2241"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2241">
+                                    <a href="{{ route('login') }}"></span><span>Connexion</span></a></li>
+                                    @endif
+
+                                    @if (Route::has('register'))
+                                    <li id="menu-item-2240"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2240">
+                                    <a href="{{ route('register') }}">Inscription</span></a></li>
+                                    @endif
+                                    @endguest
+                                </ul>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ct-header-middle">
+                    <div class="container">
+                        <div class="row">
                             <div class="ct-header-branding">
                                 <div class="ct-header-branding-inner"> <a class="logo-dark"
                                         href="https://demo.casethemes.net/organio/" title="Organio" rel="home"><img
@@ -4835,7 +3708,104 @@
                                             src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/logo-mobile.png"
                                             alt="Organio" /></a></div>
                             </div>
-                            <div class="ct-header-navigation ct-header-navigation-right">
+                            <div class="ct-header-product-search">
+                                <form action="https://demo.casethemes.net/organio/" class="product-searchform"
+                                    method="get">
+                                    <div class="product-search-category"> <select name="product_cat">
+                                            <option value="">Sélectionner catégorie</option>
+                                            @foreach (getCategories() as $category)
+                                                <option value="">{{$category->name}}</option>
+                                            @endforeach
+                                        </select></div>
+                                    <div class="product-search-meta"> <input type="text" name="s" value=""
+                                            placeholder="Rechercher un produit"> <button type="submit"
+                                            class="btn btn-animate">Rechercher</button> <input type="hidden"
+                                            name="post_type" value="product" /></div>
+                                </form>
+                            </div>
+                            <div class="ct-header-phone">
+                                <div class="ct-header-phone-icon"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <g>
+                                            <path d="M256,0C131.935,0,31,100.935,31,225c0,13.749,0,120.108,0,122c0,24.813,20.187,45,45,45h17.58
+                                            c6.192,17.458,22.865,30,42.42,30c24.813,0,45-20.187,45-45V255c0-24.813-20.187-45-45-45c-19.555,0-36.228,12.542-42.42,30H76
+                                            c-5.259,0-10.305,0.915-15,2.58V225c0-107.523,87.477-195,195-195s195,87.477,195,195v17.58c-4.695-1.665-9.741-2.58-15-2.58
+                                            h-17.58c-6.192-17.458-22.865-30-42.42-30c-24.813,0-45,20.187-45,45v122c0,24.813,20.187,45,45,45
+                                            c4.541,0,8.925-0.682,13.061-1.939C383.45,438.523,366.272,452,346,452h-47.58c-6.192-17.458-22.865-30-42.42-30
+                                            c-24.813,0-45,20.187-45,45s20.187,45,45,45c19.555,0,36.228-12.542,42.42-30H346c41.355,0,75-33.645,75-75v-15h15
+                                            c24.813,0,45-20.187,45-45c0-1.864,0-108.262,0-122C481,100.935,380.065,0,256,0z M121,255c0-8.271,6.729-15,15-15s15,6.729,15,15
+                                            v122c0,8.271-6.729,15-15,15s-15-6.729-15-15V255z M76,270h15v92H76c-8.271,0-15-6.729-15-15v-62C61,276.729,67.729,270,76,270z
+                                            M256,482c-8.271,0-15-6.729-15-15s6.729-15,15-15s15,6.729,15,15S264.271,482,256,482z M391,377c0,8.271-6.729,15-15,15
+                                            s-15-6.729-15-15V255c0-8.271,6.729-15,15-15s15,6.729,15,15V377z M451,347c0,8.271-6.729,15-15,15h-15v-92h15
+                                            c8.271,0,15,6.729,15,15V347z" />
+                                        </g>
+                                    </svg></div>
+                                <div class="ct-header-phone-meta"> <label>Support 24/7 </label> <a
+                                        href="tel:+901570584567">+90 157 058 4567</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ct-header" class="ct-header-main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="ct-header-branding">
+                                <div class="ct-header-branding-inner"> <a class="logo-dark"
+                                        href="https://demo.casethemes.net/organio/" title="Organio" rel="home"><img
+                                            src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/logo-dark.png"
+                                            alt="Organio" /></a><a class="logo-light"
+                                        href="https://demo.casethemes.net/organio/" title="Organio" rel="home"><img
+                                            src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/logo-light.png"
+                                            alt="Organio" /></a><a class="logo-mobile"
+                                        href="https://demo.casethemes.net/organio/" title="Organio" rel="home"><img
+                                            src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/logo-mobile.png"
+                                            alt="Organio" /></a></div>
+                            </div>
+                            <div class="ct-header-navigation">
+                                <div class="ct-menu-shop">
+                                    <ul id="ct-menu-shop" class="ct-main-menu children-arrow ct-menu-shop clearfix">
+                                        <li id="menu-item-2231"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2231">
+                                            <a href="#"><span class="ct-icon-menu"><i></i></span><span>Catégories</span></a>
+                                            <ul class="sub-menu">
+                                                @foreach (getCategoriesSubcategories() as $category)
+                                                @if ($category->name == 'surgelés')
+                                                <li id="menu-item-2277" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-2277">
+                                                    <a href="#">
+                                                        <span class="link-icon left-icon">
+                                                            <i class="flaticon-cherry"></i></span>
+                                                            <span class="ct-icon-menu"><i></i></span>
+                                                            <span>{{$category->name}}</span></a>
+                                                    <ul class="sub-menu">
+                                                        @foreach ($category->subcategories as $subcategory)
+                                                        <li id="menu-item-3024" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3024">
+                                                            <a href="{{route('product.index', $subcategory->id)}}">
+                                                                <span class="ct-icon-menu"><i></i></span>
+                                                                <span>{{$subcategory->name}}</span>
+                                                            </a>
+                                                        </li>
+                                                        @endforeach
+                                                    </ul>
+                                                </li> 
+                                                @else
+                                                <li id="menu-item-2278"
+                                                class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2278">
+                                                <a href="https://demo.casethemes.net/organio/product-category/grocery-frozen/">
+                                                    <span class="link-icon left-icon">
+                                                        <i class="flaticon-cardboard"></i>
+                                                    </span>
+                                                    <span class="ct-icon-menu"><i></i></span>
+                                                    <span>{{$category->name}}</span>
+                                                </a>
+                                                </li>
+                                                @endif
+                                                
+                                                @endforeach
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <nav class="ct-main-navigation">
                                     <div class="ct-main-navigation-inner">
                                         <div class="ct-logo-mobile"> <a href="" title="" rel="home"><img
@@ -4844,84 +3814,20 @@
                                         <div class="header-mobile-search">
                                             <form role="search" method="get"
                                                 action="https://demo.casethemes.net/organio/"> <input type="text"
-                                                    placeholder="Search..." name="s" class="search-field" /> <button
+                                                    placeholder="Rechercher..." name="s" class="search-field" /> <button
                                                     type="submit" class="search-submit"><i
                                                         class="caseicon-search"></i></button></form>
                                         </div>
-                                        <ul id="ct-main-menu-left-mobile" class="ct-main-menu children-arrow clearfix">
-                                            <li
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14 current_page_item megamenu megamenu-style-alt menu-item-has-children menu-item-23">
-                                                <a href="https://demo.casethemes.net/organio/"
-                                                    aria-current="page"><span>Accueil</span></a>
-
-                                            </li>
-                                            <li
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+                                        <ul id="ct-main-menu" class="ct-main-menu children- clearfix">
+                                            <li id="menu-item-22"
+                                                class="menu-item current-menu-item current_page_item menu-item-type-post_type menu-item-object-page menu-item-22">
                                                 <a
-                                                    href="/about-us"><span>About</span></a>
+                                                    href="/"><span>Accueil</span></a>
                                             </li>
-                                            <li
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24">
-                                                <a href="#"><span>Pages</span></a>
-                                                <ul class="sub-menu">
-                                                    <li
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-181">
-                                                        <a
-                                                            href="https://demo.casethemes.net/organio/services/"><span>Services</span></a>
-                                                    </li>
-                                                    <li
-                                                        class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1579">
-                                                        <a
-                                                            href="https://demo.casethemes.net/organio/service/organic-store-services/"><span>Single
-                                                                Service</span></a>
-                                                    </li>
-                                                    <li
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-182">
-                                                        <a href="https://demo.casethemes.net/organio/team/"><span>Our
-                                                                Team</span></a>
-                                                    </li>
-                                                    <li
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4529">
-                                                        <a href="https://demo.casethemes.net/organio/contact-us/"><span>Contact
-                                                                Us</span></a>
-                                                    </li>
-                                                    <li
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-978">
-                                                        <a
-                                                            href="https://demo.casethemes.net/organio/testimonials/"><span>Testimonials</span></a>
-                                                    </li>
-                                                    <li
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3718">
-                                                        <a href="#"><span>User Pages</span></a>
-                                                        <ul class="sub-menu">
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3720">
-                                                                <a href="https://demo.casethemes.net/organio/sign-in/"><span>Sign
-                                                                        In</span></a>
-                                                            </li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3719">
-                                                                <a href="https://demo.casethemes.net/organio/sign-up/"><span>Sign
-                                                                        Up</span></a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-183">
-                                                        <a href="https://demo.casethemes.net/organio/404-page"><span>404
-                                                                Page</span></a>
-                                                    </li>
-                                                    <li
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3717">
-                                                        <a
-                                                            href="https://demo.casethemes.net/organio/landing/"><span>Landing</span></a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li
+                                            <li id="menu-item-25"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page megamenu megamenu-style-alt menu-item-has-children menu-item-25">
                                                 <a
-                                                    href="https://demo.casethemes.net/organio/shop/"><span>Shop</span></a>
+                                                    href="#"><span>Pays</span></a>
                                                 <ul class="sub-menu">
                                                     <li>
                                                         <div class="container">
@@ -4933,8 +3839,8 @@
                                                                         class="elementor-section elementor-top-section elementor-element elementor-element-2fddfa6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                                                         data-id="2fddfa6" data-element_type="section"
                                                                         data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                                                        <div
-                                                                            class="elementor-container elementor-column-gap-extended ">
+                                                                        <div class="elementor-container elementor-column-gap-extended ">
+                                                                            @foreach (getCountriesCategories() as $country)
                                                                             <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-1fcd143"
                                                                                 data-id="1fcd143"
                                                                                 data-element_type="column">
@@ -4950,8 +3856,7 @@
                                                                                                 class="ct-heading h-align- item-st-default">
                                                                                                 <h6 class="item--title case-animate-time st-default wow "
                                                                                                     data-wow-delay="ms">
-                                                                                                    <span>Product
-                                                                                                        Layout</span>
+                                                                                                    <span>{{$country->name}}</span>
                                                                                                 </h6>
                                                                                             </div>
                                                                                         </div>
@@ -4960,205 +3865,23 @@
                                                                                         data-id="1226cea"
                                                                                         data-element_type="widget"
                                                                                         data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product-grid-2-columns/">
-                                                                                                            <span>Grid 2
-                                                                                                                Columns</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product-grid-3-columns/">
-                                                                                                            <span>Grid 3
-                                                                                                                Columns</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product-grid-4-columns/">
-                                                                                                            <span>Grid 4
-                                                                                                                Columns</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product-grid-4-columns-full-width/">
-                                                                                                            <span>Grid 4
-                                                                                                                Columns
-                                                                                                                Wide</span>
-                                                                                                        </a></li>
+                                                                                        <div class="elementor-widget-container">
+                                                                                            <div lass="ct-menu-item-wrap  style1">
+                                                                                                <ul class="ct-menu-item ">
+                                                                                                    @foreach ($country->categories as $category)
+                                                                                                    <li> 
+                                                                                                        <a href="">
+                                                                                                            <span>{{$category->name}}</span>
+                                                                                                        </a>
+                                                                                                    </li>
+                                                                                                    @endforeach
                                                                                                 </ul>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-bba0642"
-                                                                                data-id="bba0642"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-77a904a elementor-widget elementor-widget-ct_heading"
-                                                                                        data-id="77a904a"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_heading.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-heading h-align- item-st-default">
-                                                                                                <h6 class="item--title case-animate-time st-default wow "
-                                                                                                    data-wow-delay="ms">
-                                                                                                    <span>Product
-                                                                                                        Layout</span>
-                                                                                                </h6>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-82bcedb elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="82bcedb"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/shop/?sidebar-shop=left">
-                                                                                                            <span>Grid
-                                                                                                                Left
-                                                                                                                Sidebar</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/shop/?sidebar-shop=right">
-                                                                                                            <span>Grid
-                                                                                                                Right
-                                                                                                                Sidebar</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/shop/?shop-layout=list">
-                                                                                                            <span>Product
-                                                                                                                List</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product-masonry/">
-                                                                                                            <span>Product
-                                                                                                                Masonry</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-b607ae7"
-                                                                                data-id="b607ae7"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-9ae596f elementor-widget elementor-widget-ct_heading"
-                                                                                        data-id="9ae596f"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_heading.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-heading h-align- item-st-default">
-                                                                                                <h6 class="item--title case-animate-time st-default wow "
-                                                                                                    data-wow-delay="ms">
-                                                                                                    <span>Product
-                                                                                                        Types</span>
-                                                                                                </h6>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-4546b12 elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="4546b12"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product/indigi-teas/">
-                                                                                                            <span>Simple</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product/organic-juice/">
-                                                                                                            <span>Variable</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product/raw-cashew-butter/">
-                                                                                                            <span>External</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/product/blueberry-cookies/">
-                                                                                                            <span>Grouped</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-1687b2d"
-                                                                                data-id="1687b2d"
-                                                                                data-element_type="column">
-                                                                                <div
-                                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                                    <div class="elementor-element elementor-element-584856a elementor-widget elementor-widget-ct_heading"
-                                                                                        data-id="584856a"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_heading.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-heading h-align- item-st-default">
-                                                                                                <h6 class="item--title case-animate-time st-default wow "
-                                                                                                    data-wow-delay="ms">
-                                                                                                    <span>Shop
-                                                                                                        Pages</span>
-                                                                                                </h6>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-11cf14d elementor-widget elementor-widget-ct_menu_item"
-                                                                                        data-id="11cf14d"
-                                                                                        data-element_type="widget"
-                                                                                        data-widget_type="ct_menu_item.default">
-                                                                                        <div
-                                                                                            class="elementor-widget-container">
-                                                                                            <div
-                                                                                                class="ct-menu-item-wrap  style1">
-                                                                                                <ul
-                                                                                                    class="ct-menu-item ">
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/sign-in/">
-                                                                                                            <span>My
-                                                                                                                Account</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/cart/">
-                                                                                                            <span>Cart</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/checkout/">
-                                                                                                            <span>Checkout</span>
-                                                                                                        </a></li>
-                                                                                                    <li> <a
-                                                                                                            href="https://demo.casethemes.net/organio/wishlist/">
-                                                                                                            <span>Wishlist</span>
-                                                                                                        </a></li>
-                                                                                                </ul>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
+                                                                            @endforeach
                                                                             <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-d6f509e"
                                                                                 data-id="d6f509e"
                                                                                 data-element_type="column">
@@ -5173,25 +3896,22 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                        </ul>
-                                        <ul id="ct-main-menu-right" class="ct-main-menu children-arrow clearfix">
                                             <li id="menu-item-22"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
                                                 <a
-                                                    href="/about-us"><span>A propos</span></a>
+                                                    href="/about"><span>A propos</span></a>
                                             </li>
                                             <li id="menu-item-22"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
                                                 <a
-                                                    href="https://demo.casethemes.net/organio/about/"><span>Contact</span></a>
+                                                    href="/contact"><span>Contact</span></a>
                                             </li>
                                             <li id="menu-item-22"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
                                                 <a
-                                                    href="https://demo.casethemes.net/organio/about/"><span>Blog</span></a>
+                                                    href="/blog"><span>Blog</span></a>
                                             </li>
                                             @guest
-
                                             @else
                                             <li id="menu-item-372"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-372">
@@ -5229,12 +3949,14 @@
                                                 </ul>
                                             </li>
                                             @endguest
-
                                         </ul>
                                     </div>
                                 </nav>
-                                <div class="ct-header-meta">
-                                    <div class="header-right-item h-btn-search"><i class="caseicon-search"></i></div>
+                                <div class="header-right-item h-btn-cart"> <i class="caseicon-shopping-cart"></i>
+                                    Panier: <span class="widget_cart_counter_header">0 - <span
+                                            class="cart-total"><span
+                                                class="woocommerce-Price-amount amount"><bdi><span
+                                                        class="woocommerce-Price-currencySymbol">&#36;</span>0.00</bdi></span></span></span>
                                 </div>
                             </div>
                             <div class="ct-menu-overlay"></div>
@@ -5247,10 +3969,54 @@
                 </div>
             </div>
         </header>
-
-        <!-- PAGE CONTENT -->
-            @yield('content')
-                                                                           listeners: [],
+        @yield('content')
+        <footer id="colophon" class="site-footer-custom">
+            <div class="footer-custom-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div data-elementor-type="wp-post" data-elementor-id="30" class="elementor elementor-30"
+                                data-elementor-settings="[]">
+                                <div class="elementor-section-wrap">
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-8773834 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="8773834" data-element_type="section"
+                                        data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-container elementor-column-gap-extended ">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3648b42"
+                                                data-id="3648b42" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-9fc7fb9 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="9fc7fb9" data-element_type="section">
+                                                        <div
+                                                            class="elementor-container elementor-column-gap-extended ">
+                                                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-270589d"
+                                                                data-id="270589d" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-b064e56 elementor-widget elementor-widget-ct_mailchimp_form"
+                                                                        data-id="b064e56" data-element_type="widget"
+                                                                        data-widget_type="ct_mailchimp_form.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="ct-mailchimp ct-mailchimp1 bg-image style2"
+                                                                                style="background-image: url(https://demo.casethemes.net/organio/wp-content/uploads/2021/03/bg-mailchimp.jpg);">
+                                                                                <div class="ct-mailchimp-inner">
+                                                                                    <div
+                                                                                        class="ct-mailchimp-image-left">
+                                                                                        <img width="400" height="203"
+                                                                                            src="https://demo.casethemes.net/organio/wp-content/uploads/2021/03/mailchimp-image1.png"
+                                                                                            class="attachment-full"
+                                                                                            alt="" /></div>
+                                                                                    <div class="ct-mailchimp-meta">
+                                                                                        <h4 class="wg-title">
+                                                                                            S'abonner à notre Newsletter:
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <script>
+                                                                                        (function() {
+                                                                                            window.mc4wp = window.mc4wp || {
+                                                                                                listeners: [],
                                                                                                 forms: {
                                                                                                     on: function(evt, cb) {
                                                                                                         window.mc4wp.listeners.push({
@@ -5274,13 +4040,13 @@
                                                                                                     class="field-input">
                                                                                                     <input type="email"
                                                                                                         name="EMAIL"
-                                                                                                        placeholder="Votre adresse email..."
+                                                                                                        placeholder="votre adresse email..."
                                                                                                         required />
                                                                                                 </div>
                                                                                                 <div
                                                                                                     class="field-input">
                                                                                                     <input type="submit"
-                                                                                                        value="s'enregistrer" />
+                                                                                                        value="Sabonner" />
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div><label
@@ -5292,7 +4058,7 @@
                                                                                                 autocomplete="off" /></label><input
                                                                                             type="hidden"
                                                                                             name="_mc4wp_timestamp"
-                                                                                            value="1649171448" /><input
+                                                                                            value="1649266774" /><input
                                                                                             type="hidden"
                                                                                             name="_mc4wp_form_id"
                                                                                             value="93" /><input
@@ -5340,11 +4106,10 @@
                                                                             <div id="ct_text_editor-84243fb"
                                                                                 class="ct-text-editor "
                                                                                 data-wow-delay="ms">
-                                                                                <div class="ct-inline-css"
-                                                                                    data-css=" "></div>
+                                                                                <div class="ct-inline-css" data-css=" "></div>
                                                                                 <div
                                                                                     class="ct-text-editor elementor-clearfix">
-                                                                                    Des produits frais et bio venus d'Afrique pour vous.</div>
+                                                                                    Des produits alimentaires venus frais et bio venus d'Afrique juste pour vous.</div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -5365,8 +4130,7 @@
                                                                                 </a> <a class="ct_icon-4bd9b06-3"
                                                                                     href="#"> <i aria-hidden="true"
                                                                                         class="fab fa-behance"></i>
-                                                                                </a>
-                                                                            </div>
+                                                                                </a></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5383,8 +4147,7 @@
                                                                                 class="ct-heading h-align- item-st-default">
                                                                                 <h3 class="item--title case-animate-time st-default wow "
                                                                                     data-wow-delay="ms">
-                                                                                    <span>Besoin d'aide?</span>
-                                                                                </h3>
+                                                                                    <span>Besoin d'aide?</span></h3>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -5408,24 +4171,28 @@
                                                                                     <ul id="menu-menu-footer"
                                                                                         class="menu">
                                                                                         <li id="menu-item-60"
-                                                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14 current_page_item menu-item-60">
-                                                                                            <a href="https://demo.casethemes.net/organio/"
-                                                                                                aria-current="page"><span>Modifier une commande</span></a>
+                                                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-60">
+                                                                                            <a
+                                                                                                href="https://demo.casethemes.net/organio/"><span>Suivre ou annuler sa commande</span></a>
+                                                                                        </li>
+                                                                                        <li id="menu-item-60"
+                                                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-60">
+                                                                                            <a
+                                                                                                href="https://demo.casethemes.net/organio/"><span>Retourner une livraison</span></a>
                                                                                         </li>
                                                                                         <li id="menu-item-980"
                                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-980">
                                                                                             <a
-                                                                                                href="https://demo.casethemes.net/organio/services/"><span>Annuler une commande</span></a>
+                                                                                                href="https://demo.casethemes.net/organio/services/"><span>politique de livraison</span></a>
                                                                                         </li>
                                                                                         <li id="menu-item-62"
                                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62">
                                                                                             <a
-                                                                                                href="https://demo.casethemes.net/organio/about/"><span>Suivre sa commande</span></a>
-                                                                                        </li>
+                                                                                                href="https://demo.casethemes.net/organio/about/"><span>Politique de retour</span></a></li>
                                                                                         <li id="menu-item-979"
                                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-979">
                                                                                             <a
-                                                                                                href="https://demo.casethemes.net/organio/testimonials/"><span>apropos de nous</span></a>
+                                                                                                href="about/"><span>A propos de nous</span></a>
                                                                                         </li>
                                                                                     </ul>
                                                                                 </div>
@@ -5462,8 +4229,7 @@
                                                                         data-id="7079037" data-element_type="widget"
                                                                         data-widget_type="ct_contact_info.default">
                                                                         <div class="elementor-widget-container">
-                                                                            <div class="ct-inline-css" data-css=" ">
-                                                                            </div>
+                                                                            <div class="ct-inline-css" data-css=" "></div>
                                                                             <ul id="ct_contact_info-7079037"
                                                                                 class="ct-contact-info ct-contact-info1 "
                                                                                 data-wow-duration="1.2s">
@@ -5471,20 +4237,17 @@
                                                                                             aria-hidden="true"
                                                                                             class="fas fa-map-marker-alt"></i>
                                                                                     </span> <span
-                                                                                        class="ct-contact-content"> 4
-                                                                                        rue de la justice pourpre, 95000</span></li>
+                                                                                        class="ct-contact-content"> 3
+                                                                                        rue de la justice,
+                                                                                        95000 Cergy </span></li>
+                                                                                
                                                                                 <li> <span class="ct-contact-icon"> <i
                                                                                             aria-hidden="true"
                                                                                             class="fas fa-phone-alt"></i>
                                                                                     </span> <span
                                                                                         class="ct-contact-content">
                                                                                         1-888-452-1505 </span></li>
-                                                                                        <li> <span class="ct-contact-icon"> <i
-                                                                                            aria-hidden="true"
-                                                                                            class="fas fa-phone-alt"></i>
-                                                                                    </span> <span
-                                                                                        class="ct-contact-content">
-                                                                                        Nous contacter </span></li>
+                                                                                        <li><a href="/contact">Nous contacter</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
@@ -5495,7 +4258,7 @@
                                                                             <div
                                                                                 class="ct-heading h-align- item-st-default">
                                                                                 <h6 class="item--title case-animate-time st-default wow "
-                                                                                    data-wow-delay="ms"> <span>Livraison 24h/24 </span></h6>
+                                                                                    data-wow-delay="ms"> <span>Livraison 24h/24: </span></h6>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -5520,18 +4283,17 @@
                                                                         <div class="elementor-widget-container">
                                                                             <div id="ct_text_editor-61622b0"
                                                                                 class="ct-text-editor "
-                                                                                ata-wow-delay="ms">
-                                                                                <div class="ct-inline-css"
-                                                                                    data-css=""></div>
+                                                                                data-wow-delay="ms">
+                                                                                <div class="ct-inline-css" data-css=" "></div>
                                                                                 <div
                                                                                     class="ct-text-editor elementor-clearfix">
                                                                                     © <span
-                                                                                        class="ct-year">2022</span>
-                                                                                    Organico &#8211; <a
+                                                                                        class="ct-year">2021</span>
+                                                                                    Organio &#8211; <a
                                                                                         href="https://themeforest.net/user/case-themes/portfolio"
                                                                                         target="_blank"
                                                                                         rel="nofollow noopener"></a>.
-                                                                                    Tout droit reservés.</div>
+                                                                                    All rights reserved.</div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -5591,8 +4353,7 @@
                                             data-validate="Required Field"
                                             data-user-length="Username too short. At least 4 characters is required."
                                             data-special-char="The value of text field can&#039;t contain any of the following characters: \ / : * ? &quot; &lt; &gt; space">
-                                        <i class="zmdi zmdi-account"></i>
-                                    </div>
+                                        <i class="zmdi zmdi-account"></i></div>
                                     <div class="field-group"> <input id="res_email" type="text"
                                             class="input" placeholder="Email Address"
                                             data-validate="Required Field"
@@ -5607,8 +4368,7 @@
                                             class="input" data-type="password" placeholder="Confirm Password"
                                             data-validate="Required Field"
                                             data-pass-confirm="Your password and confirmation password do not match.">
-                                        <i class="zmdi zmdi-lock"></i>
-                                    </div>
+                                        <i class="zmdi zmdi-lock"></i></div>
                                     <div class="field-group"> <button type="button"
                                             class="button btn-up-register">Create Account</button></div>
                                 </div>
@@ -5626,9 +4386,9 @@
                         <div class="ct-user-form-body ct-user-form-login">
                             <div class="login-form">
                                 <div class="fields-content">
-                                    <div class="field-group"> <input id="user" type="text" class="input user_name"
-                                            placeholder="Username" data-validate="Required Field"> <i
-                                            class="zmdi zmdi-account"></i></div>
+                                    <div class="field-group"> <input id="user" type="text"
+                                            class="input user_name" placeholder="Username"
+                                            data-validate="Required Field"> <i class="zmdi zmdi-account"></i></div>
                                     <div class="field-group"> <input id="pass" type="password"
                                             class="input password" placeholder="Password"
                                             data-validate="Required Field"> <i class="zmdi zmdi-lock"></i></div>
@@ -5783,25 +4543,12 @@
             document.body.className = c;
         })();
     </script>
-    <script type="text/javascript">
-        if (typeof revslider_showDoubleJqueryError === "undefined") {
-            function revslider_showDoubleJqueryError(sliderID) {
-                var err = "<div class='rs_error_message_box'>";
-                err += "<div class='rs_error_message_oops'>Oops...</div>";
-                err += "<div class='rs_error_message_content'>";
-                err +=
-                    "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
-                err +=
-                    "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
-                err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
-                err += "</div>";
-                err += "</div>";
-                var slider = document.getElementById(sliderID);
-                slider.innerHTML = err;
-                slider.style.display = "block";
-            }
-        }
-    </script>
+    <link rel='stylesheet' id='wpml-style-css'
+        href='https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/css/style-lang.css?ver=1.0.0'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.5.6'
+        type='text/css' media='all' />
     <link rel='stylesheet' id='elementor-post-2655-css'
         href='https://demo.casethemes.net/organio/wp-content/uploads/elementor/css/post-2655.css?ver=1648277083'
         type='text/css' media='all' />
@@ -5813,6 +4560,15 @@
         type='text/css' media='all' />
     <link rel='stylesheet' id='elementor-post-30-css'
         href='https://demo.casethemes.net/organio/wp-content/uploads/elementor/css/post-30.css?ver=1648277085'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-css'
+        href='https://demo.casethemes.net/organio/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.14.0'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-12-css'
+        href='https://demo.casethemes.net/organio/wp-content/uploads/elementor/css/post-12.css?ver=1648277083'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-global-css'
+        href='https://demo.casethemes.net/organio/wp-content/uploads/elementor/css/global.css?ver=1648277083'
         type='text/css' media='all' />
     <link rel='stylesheet' id='e-animations-css'
         href='https://demo.casethemes.net/organio/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.5.6'
@@ -5839,7 +4595,7 @@
         /* <![CDATA[ */
         var userpress = {
             "ajax": "https:\/\/demo.casethemes.net\/organio\/wp-admin\/admin-ajax.php",
-            "nonce": "553a4ef6e2"
+            "nonce": "b78a460517"
         };
         /* ]]> */
     </script>
@@ -5918,7 +4674,7 @@
             "confirm_delete": "Are you sure?",
             "deleting_text": "Deleting...",
             "deleting_error": "An error occurred. Please try again.",
-            "nonce": "acb83a6d01",
+            "nonce": "b7a56970c2",
             "disable_ajax_form": "false"
         };
         /* ]]> */
@@ -5964,7 +4720,7 @@
             "limit_notice": "You can add a maximum of {limit} products to the compare table.",
             "button_text": "Compare",
             "button_text_added": "Compare",
-            "nonce": "434c194670"
+            "nonce": "9830c319d5"
         };
         /* ]]> */
     </script>
@@ -5982,7 +4738,7 @@
         };
         /* ]]> */
     </script>
-    <script type='text/javascript' src='https://demo.casethemes.net/organio/wp-includes/js/wp-util.min.js?ver=5.9.2'
+    <script type='text/javascript' src='https://demo.casethemes.net/organio/wp-includes/js/wp-util.min.js?ver=5.9.3'
         id='wp-util-js'></script>
     <script type='text/javascript' id='wc-add-to-cart-variation-js-extra'>
         /* <![CDATA[ */
@@ -6069,7 +4825,7 @@
             "is_product_page": "",
             "show_variation_label": "1",
             "variation_label_separator": ":",
-            "wvs_nonce": "2f25f4487a"
+            "wvs_nonce": "b0445bbdaa"
         };
         /* ]]> */
     </script>
@@ -6077,32 +4833,31 @@
         src='https://demo.casethemes.net/organio/wp-content/plugins/woo-variation-swatches/assets/js/frontend.min.js?ver=1.1.19'
         id='woo-variation-swatches-js'></script>
     <script type='text/javascript'
+        src='https://demo.casethemes.net/organio/wp-includes/js/jquery/ui/slider.min.js?ver=1.13.1'
+        id='jquery-ui-slider-js'></script>
+    <script type='text/javascript'
+        src='https://demo.casethemes.net/organio/wp-content/plugins/woocommerce/assets/js/jquery-ui-touch-punch/jquery-ui-touch-punch.min.js?ver=6.2.1'
+        id='wc-jquery-ui-touchpunch-js'></script>
+    <script type='text/javascript'
+        src='https://demo.casethemes.net/organio/wp-content/plugins/woocommerce/assets/js/accounting/accounting.min.js?ver=0.4.2'
+        id='accounting-js'></script>
+    <script type='text/javascript' id='wc-price-slider-js-extra'>
+        /* <![CDATA[ */
+        var woocommerce_price_slider_params = {
+            "currency_format_num_decimals": "0",
+            "currency_format_symbol": "$",
+            "currency_format_decimal_sep": ".",
+            "currency_format_thousand_sep": ",",
+            "currency_format": "%s%v"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript'
+        src='https://demo.casethemes.net/organio/wp-content/plugins/woocommerce/assets/js/frontend/price-slider.min.js?ver=6.2.1'
+        id='wc-price-slider-js'></script>
+    <script type='text/javascript'
         src='https://demo.casethemes.net/organio/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2'
         id='elementor-waypoints-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/plugins/case-theme-core/assets/js/lib/slick.min.js?ver=1.8.1'
-        id='jquery-slick-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/themes/orgio/elementor/js/ct-post-carousel-widget.js?ver=1.5.0'
-        id='ct-post-carousel-widget-js-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1'
-        id='jquery-numerator-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/themes/orgio/elementor/js/ct-counter-widget.js?ver=1.5.0'
-        id='ct-counter-widget-js-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/themes/orgio/elementor/js/ct-countdown.js?ver=1.5.0'
-        id='ct-countdown-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/themes/orgio/elementor/js/ct-parallax-lib.js?ver=all'
-        id='ct-parallax-lib-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/themes/orgio/elementor/js/ct-parallax.js?ver=all'
-        id='ct-parallax-js'></script>
-    <script type='text/javascript'
-        src='https://demo.casethemes.net/organio/wp-content/themes/orgio/elementor/js/ct-progressbar-widget.js?ver=1.5.0'
-        id='ct-progressbar-widget-js-js'></script>
     <script type='text/javascript' id='sbi_scripts-js-extra'>
         /* <![CDATA[ */
         var sb_instagram_js_options = {
@@ -6226,7 +4981,6 @@
                 "assets": "https:\/\/demo.casethemes.net\/organio\/wp-content\/plugins\/elementor\/assets\/"
             },
             "settings": {
-                "page": [],
                 "editorPreferences": []
             },
             "kit": {
@@ -6240,10 +4994,9 @@
                 "lightbox_description_src": "description"
             },
             "post": {
-                "id": 30,
-                "title": "Organio%20%E2%80%93%20Organic%20%26%20Food%20Store%20WordPress%20Theme",
-                "excerpt": "",
-                "featuredImage": false
+                "id": 0,
+                "title": "Products &#8211; Organio",
+                "excerpt": "<p>This is where you can browse products in this store.<\/p>\n"
             }
         };
     </script>

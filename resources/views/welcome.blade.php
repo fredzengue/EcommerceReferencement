@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.scss') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -79,7 +79,6 @@
         </main>
     </div>
 </body>
-='ct-countdown-js'></script>
     <script type='text/javascript'
         src='https://demo.casethemes.net/organio/wp-content/themes/orgio/elementor/js/ct-parallax-lib.js?ver=all'
         id='ct-parallax-lib-js'></script>
