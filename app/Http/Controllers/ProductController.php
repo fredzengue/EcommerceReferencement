@@ -13,8 +13,8 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index($id){
-        $products = Product::with('subcategory')->where('subcategory_id','=',$id)->paginate(15);
-        return view('products.index')->with('products',$products);
+        $subcategory = Product::with('subcategory')->where('subcategory_id','=',$id)->firstOrFail(1);
+        return view('products.index')->with('subcategory',$subcategory);
     }
 
     /**

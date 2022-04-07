@@ -12,6 +12,9 @@ function getCategoriesSubcategories(){
 function getCountriesCategories() {
     return Country::with('categories')->get();
 }
+function findCategory($id){
+    return Category::find($id);
+}
 
 function randomCountry($length){
     $digits = array();
