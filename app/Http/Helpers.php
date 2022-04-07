@@ -7,7 +7,7 @@ function getCategories() {
     return Category::all();
 }
 function getCategoriesSubcategories(){
-    return Category::with('subcategories')->get();
+    return Category::all();
 }
 function getCountriesCategories() {
     return Country::with('categories')->get();
