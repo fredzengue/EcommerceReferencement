@@ -2,13 +2,12 @@
 
 use App\Models\Category;
 use App\Models\Country;
-use App\Models\Subcategory;
 
 function getCategories() {
     return Category::all();
 }
 function getCategoriesSubcategories(){
-    return Subcategory::all();
+    return Category::with('subcategories')->get();
 }
 function getCountriesCategories() {
     return Country::with('categories')->get();
