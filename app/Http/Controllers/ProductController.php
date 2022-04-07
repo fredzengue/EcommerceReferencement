@@ -15,7 +15,10 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index($id){
-        $products = Product::with('subcategory')->where('subcategory_id','=',$id)->paginate(15);
+        $products = Subcategory::with('products','category')->where([
+            ['id','=',$id],
+            ['category_id','=',$id],
+        ])->paginate(15);
         return view('products.index')->with('products',$products);
     }
 

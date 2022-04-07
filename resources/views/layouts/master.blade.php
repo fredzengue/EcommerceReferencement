@@ -3698,18 +3698,18 @@
                         <div class="row">
                             <div class="ct-header-branding">
                                 <div class="ct-header-branding-inner"> <a class="logo-dark"
-                                        href="https://demo.casethemes.net/organio/" title="Organio" rel="home"><img
+                                        href="/" title="Organio" rel="home"><img
                                             src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/logo-dark.png"
                                             alt="Organio" /></a><a class="logo-light"
-                                        href="https://demo.casethemes.net/organio/" title="Organio" rel="home"><img
+                                        href="/" title="Organio" rel="home"><img
                                             src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/logo-light.png"
                                             alt="Organio" /></a><a class="logo-mobile"
-                                        href="https://demo.casethemes.net/organio/" title="Organio" rel="home"><img
+                                        href="/" title="Organio" rel="home"><img
                                             src="https://demo.casethemes.net/organio/wp-content/themes/orgio/assets/images/logo-mobile.png"
                                             alt="Organio" /></a></div>
                             </div>
                             <div class="ct-header-product-search">
-                                <form action="https://demo.casethemes.net/organio/" class="product-searchform"
+                                <form action="#" class="product-searchform"
                                     method="get">
                                     <div class="product-search-category"> <select name="product_cat">
                                             <option value="">Sélectionner catégorie</option>
@@ -3791,7 +3791,7 @@
                                                 @else
                                                 <li id="menu-item-2278"
                                                 class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2278">
-                                                <a href="https://demo.casethemes.net/organio/product-category/grocery-frozen/">
+                                                <a href="{{route('product.index', $category->id)}}">
                                                     <span class="link-icon left-icon">
                                                         <i class="flaticon-cardboard"></i>
                                                     </span>
@@ -3870,7 +3870,7 @@
                                                                                                 <ul class="ct-menu-item ">
                                                                                                     @foreach ($country->categories as $category)
                                                                                                     <li>
-                                                                                                        <a href="">
+                                                                                                        <a href="{{route('product.index', $category->id)}}">
                                                                                                             <span>{{$category->name}}</span>
                                                                                                         </a>
                                                                                                     </li>
