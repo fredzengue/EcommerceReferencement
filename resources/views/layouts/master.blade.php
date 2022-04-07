@@ -3779,7 +3779,14 @@
                                                             <span class="ct-icon-menu"><i></i></span>
                                                             <span>{{$category->name}}</span></a>
                                                     <ul class="sub-menu">
-                                                        
+                                                        @foreach ($category->subcategories as $subcategory)
+                                                        <li id="menu-item-3024" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3024">
+                                                            <a href="{{route('product.index', $subcategory->id)}}">
+                                                                <span class="ct-icon-menu"><i></i></span>
+                                                                <span>{{$subcategory->name}}</span>
+                                                            </a>
+                                                        </li>
+                                                        @endforeach
                                                     </ul>
                                                 </li> 
                                                 @else
