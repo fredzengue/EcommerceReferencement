@@ -3325,7 +3325,7 @@
         href='https://demo.casethemes.net/organio/wp-content/plugins/woo-variation-swatches/assets/css/frontend-tooltip.min.css?ver=1.1.19'
         type='text/css' media='all' />
     <script type="text/template" id="tmpl-variation-template">
-        <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability">data.variation.availability_html </div> 
+        <div class="woocommerce-variation-description">data.variation.variation_description</div><div class="woocommerce-variation-price">data.variation.price_html</div><div class="woocommerce-variation-availability">data.variation.availability_html </div>
     </script>
     <script type="text/template" id="tmpl-unavailable-variation-template">
         <p>Sorry, this product is unavailable. Please choose a different combination.</p> </script>
@@ -3373,7 +3373,7 @@
         content="Powered by Slider Revolution 6.2.22 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
     <script type="text/javascript">
         function setREVStartSize(e) {
-            //window.requestAnimationFrame(function() { 
+            //window.requestAnimationFrame(function() {
             window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
             window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
             try {
@@ -3787,7 +3787,7 @@
                                                         </li>
                                                         @endforeach
                                                     </ul>
-                                                </li> 
+                                                </li>
                                                 @else
                                                 <li id="menu-item-2278"
                                                 class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2278">
@@ -3800,7 +3800,7 @@
                                                 </a>
                                                 </li>
                                                 @endif
-                                                
+
                                                 @endforeach
                                             </ul>
                                         </li>
@@ -3869,7 +3869,7 @@
                                                                                             <div lass="ct-menu-item-wrap  style1">
                                                                                                 <ul class="ct-menu-item ">
                                                                                                     @foreach ($country->categories as $category)
-                                                                                                    <li> 
+                                                                                                    <li>
                                                                                                         <a href="">
                                                                                                             <span>{{$category->name}}</span>
                                                                                                         </a>
@@ -3899,7 +3899,7 @@
                                             <li id="menu-item-22"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
                                                 <a
-                                                    href="/about"><span>A propos</span></a>
+                                                    href="/about-us"><span>A propos</span></a>
                                             </li>
                                             <li id="menu-item-22"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
@@ -4192,7 +4192,7 @@
                                                                                         <li id="menu-item-979"
                                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-979">
                                                                                             <a
-                                                                                                href="about/"><span>A propos de nous</span></a>
+                                                                                                href="/about-us/"><span>A propos de nous</span></a>
                                                                                         </li>
                                                                                     </ul>
                                                                                 </div>
@@ -4240,7 +4240,7 @@
                                                                                         class="ct-contact-content"> 3
                                                                                         rue de la justice,
                                                                                         95000 Cergy </span></li>
-                                                                                
+
                                                                                 <li> <span class="ct-contact-icon"> <i
                                                                                             aria-hidden="true"
                                                                                             class="fas fa-phone-alt"></i>
