@@ -3770,23 +3770,7 @@
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2231">
                                             <a href="#"><span class="ct-icon-menu"><i></i></span><span>Catégories</span></a>
                                             <ul class="sub-menu">
-                                               <!-- @foreach (getCategoriesSubcategories() as $category)
-                                                @if ($category->name == 'surgelés')
-                                                <li id="menu-item-2277" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-2277">
-                                                    <a href="#">
-                                                        <span class="link-icon left-icon">
-                                                            <i class="flaticon-cherry"></i></span>
-                                                            <span class="ct-icon-menu"><i></i></span>
-                                                            <span>{{$category->name}}</span></a>
-                                                    <ul class="sub-menu">
-                                                        @foreach ($category->subcategories as $subcategory)
-                                                        <li id="menu-item-3024" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3024">
-                                                            <a href="{{route('product.index', $subcategory->id)}}">
-                                                                <span class="ct-icon-menu"><i></i></span>
-                                                                <span>{{$subcategory->name}}</span>
-                                                            </a>
-                                                        </li>
-                                                        @endforeach-->
+                                                
                                                     </ul>
                                                 </li> 
                                                 @else
