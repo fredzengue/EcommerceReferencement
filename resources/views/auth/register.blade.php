@@ -8,8 +8,8 @@
                 <h1 class="page-title">S'inscrire</h1>
             </div>
             <ul class="ct-breadcrumb">
-                <li><a class="breadcrumb-entry" href="https://demo.casethemes.net/organio/">Accueil</a></li>
-                <li><span class="breadcrumb-entry">S'identifier</span></li>
+                <li><a class="breadcrumb-entry" href="/">Accueil</a></li>
+                <li><span class="breadcrumb-entry">Inscription</span></li>
             </ul>
         </div>
     </div>

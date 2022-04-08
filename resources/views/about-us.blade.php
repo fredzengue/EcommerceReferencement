@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 @section('page_title', 'About us')
 @section('content')
     <div id="pagetitle" class="page-title bg-image ">
